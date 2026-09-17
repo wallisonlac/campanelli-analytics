@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#081529"/><path d="M15 43 27 20h10L25 43Zm19 0 11-23h5L39 43Z" fill="#49d6ff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Campanelli Analytics">
+  <rect width="64" height="64" rx="12" fill="#0B1F3A"/>
+  <path d="M14 40 L14 26 Q14 18 22 18 Q28 18 30 24" fill="none" stroke="#2F8FFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M34 18 L34 46" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M34 18 L48 18 Q54 18 54 26 Q54 32 48 32 L34 32" fill="none" stroke="#00D9E0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

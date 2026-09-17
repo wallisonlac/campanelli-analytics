@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://campanellianalytics.com/</loc>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/"/>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/en/services/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/servicos/"/>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/en/global-delivery/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/global-delivery/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/entrega-internacional/"/>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/en/partnerships/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/partnerships/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/parcerias/"/>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/sobre/"/>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/contato/"/>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/privacidade/"/>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/termos/"/>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/pt/</loc>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/pt/servicos/</loc>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/pt/entrega-internacional/</loc>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/pt/parcerias/</loc>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/pt/sobre/</loc>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/pt/contato/</loc>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/pt/privacidade/</loc>
+  </url>
+  <url>
+    <loc>https://campanellianalytics.com/pt/termos/</loc>
+  </url>
+</urlset>
