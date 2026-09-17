@@ -1,0 +1,1 @@
+{"name":"campanelli-analytics","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"astro dev","build":"astro check && astro build","preview":"astro preview"},"dependencies":{"@astrojs/sitemap":"^3.1.6","astro":"^5.0.0"},"devDependencies":{"typescript":"^5.6.0"}}
