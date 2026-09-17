@@ -1,8 +1,10 @@
 import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
 
+// Campanelli Analytics — institutional site (GitHub Pages + custom domain)
 export default defineConfig({
   site: 'https://campanellianalytics.com',
-  output: 'static',
-  integrations: [sitemap({ i18n: { defaultLocale: 'en', locales: { en: 'en', pt: 'pt-BR' } } })]
+  trailingSlash: 'always',
+  build: {
+    format: 'directory',
+  },
 });
