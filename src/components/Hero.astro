@@ -1,0 +1,25 @@
+---
+export interface Props {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  text: string;
+  credibility: string;
+  ctas: { label: string; href: string; variant: string }[];
+}
+const { eyebrow, title, subtitle, text, credibility, ctas } = Astro.props;
+---
+<section class="hero section section--dark">
+  <div class="container hero__text">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    <p>{subtitle}</p>
+    <p>{text}</p>
+    <p class="credibility">{credibility}</p>
+    <div class="cta-row">
+      {ctas.map((c) => (
+        <a class={`btn btn--${c.variant}`} href={c.href}>{c.label}</a>
+      ))}
+    </div>
+  </div>
+</section>

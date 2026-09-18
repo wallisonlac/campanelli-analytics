@@ -1,0 +1,36 @@
+---
+export interface Props {
+  lang: "en" | "pt";
+  footer: Record<string, string>;
+  privacyPath: string;
+  termsPath: string;
+  linkedin: string;
+  github: string;
+}
+const { lang, footer, privacyPath, termsPath, linkedin, github } = Astro.props;
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>{footer.companyLine}</strong><br />
+        <span>{footer.cnpjLine}</span><br />
+        <span>{footer.positioningLine}</span><br />
+        <span>{footer.locationLine}</span>
+      </div>
+      <nav aria-label="Footer links">
+        <ul>
+          <li><a href={privacyPath}>{footer.privacyLabel}</a></li>
+          <li><a href={termsPath}>{footer.termsLabel}</a></li>
+          <li><a href={linkedin} rel="noopener">LinkedIn</a></li>
+          <li><a href={github} rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; {year} Campanelli Analytics LTDA.</span>
+      <span>{lang === "pt" ? "Brasil · Portugal · Entrega Global" : "Brazil · Portugal · Global Delivery"}</span>
+    </div>
+  </div>
+</footer>

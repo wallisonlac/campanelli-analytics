@@ -1,0 +1,18 @@
+---
+export interface Props {
+  title: string;
+  text: string;
+  cta: { label: string; href: string };
+  dark?: boolean;
+}
+const { title, text, cta, dark = true } = Astro.props;
+---
+<section class={`section ${dark ? "section--dark" : "section--alt"} text-center`}>
+  <div class="container">
+    <h2>{title}</h2>
+    <p>{text}</p>
+    <div class="cta-row" style="justify-content:center">
+      <a class="btn btn--primary" href={cta.href}>{cta.label}</a>
+    </div>
+  </div>
+</section>

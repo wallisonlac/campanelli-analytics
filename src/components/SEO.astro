@@ -1,0 +1,53 @@
+---
+export interface Props {
+  lang: "en" | "pt";
+  title: string;
+  description: string;
+  path: string;
+  altPath: string;
+}
+const { lang, title, description, path, altPath } = Astro.props;
+const site = "https://campanellianalytics.com";
+const canonical = `${site}${path}`;
+const enUrl = lang === "en" ? `${site}${path}` : `${site}${altPath}`;
+const ptUrl = lang === "pt" ? `${site}${path}` : `${site}${altPath}`;
+const locale = lang === "pt" ? "pt_BR" : "en_US";
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Campanelli Analytics LTDA",
+  "url": site,
+  "logo": `${site}/favicon.svg`,
+  "description": description,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Muzambinho",
+    "addressRegion": "MG",
+    "addressCountry": "BR"
+  },
+  "areaServed": ["BR", "PT", "EU", "GB", "US", "CA", "LATAM"],
+  "knowsLanguage": ["pt", "en", "es"]
+};
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="pt-BR" href={ptUrl} />
+<link rel="alternate" hreflang="x-default" href={enUrl} />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:locale" content={locale} />
+<meta property="og:site_name" content="Campanelli Analytics" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+
+<script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+
+<!-- Analytics placeholder: insert Plausible or Google Analytics snippet here when an ID is available. -->

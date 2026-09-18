@@ -1,0 +1,53 @@
+---
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+export interface Props {
+  lang: "en" | "pt";
+  nav: Record<string, string>;
+  altPath: string;
+}
+const { lang, nav, altPath } = Astro.props;
+const base = lang === "en" ? "/en" : "/pt";
+const links = lang === "en"
+  ? [
+      { href: "/en/", label: nav.home },
+      { href: "/en/services/", label: nav.services },
+      { href: "/en/global-delivery/", label: nav.globalDelivery },
+      { href: "/en/partnerships/", label: nav.partnerships },
+      { href: "/en/about/", label: nav.about },
+      { href: "/en/contact/", label: nav.contact },
+    ]
+  : [
+      { href: "/pt/", label: nav.home },
+      { href: "/pt/servicos/", label: nav.services },
+      { href: "/pt/entrega-internacional/", label: nav.globalDelivery },
+      { href: "/pt/parcerias/", label: nav.partnerships },
+      { href: "/pt/sobre/", label: nav.about },
+      { href: "/pt/contato/", label: nav.contact },
+    ];
+const currentPath = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href={base + "/"}>Campanelli<span>Analytics</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav-links">
+        <span class="visually-hidden">Menu</span>
+        ☰
+      </button>
+      <ul class="main-nav__links" id="main-nav-links">
+        {links.map((l) => (
+          <li><a href={l.href} aria-current={currentPath === l.href ? "page" : undefined}>{l.label}</a></li>
+        ))}
+      </ul>
+      <LanguageSwitcher lang={lang} altPath={altPath} />
+    </nav>
+  </div>
+</header>
+<script>
+  const toggle = document.getElementById("nav-toggle");
+  const links = document.getElementById("main-nav-links");
+  toggle?.addEventListener("click", () => {
+    const isOpen = links?.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(Boolean(isOpen)));
+  });
+</script>

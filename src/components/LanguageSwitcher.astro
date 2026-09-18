@@ -1,0 +1,11 @@
+---
+export interface Props {
+  lang: "en" | "pt";
+  altPath: string;
+}
+const { lang, altPath } = Astro.props;
+---
+<div class="lang-switcher" role="group" aria-label="Language selector">
+  <a href={lang === "en" ? Astro.url.pathname : altPath} aria-current={lang === "en" ? "true" : "false"}>EN</a>
+  <a href={lang === "pt" ? Astro.url.pathname : altPath} aria-current={lang === "pt" ? "true" : "false"}>PT</a>
+</div>

@@ -1,0 +1,17 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  bullets: string[];
+  disclaimer?: string;
+}
+const { title, description, bullets, disclaimer } = Astro.props;
+---
+<article class="card">
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <ul>
+    {bullets.map((b) => <li>{b}</li>)}
+  </ul>
+  {disclaimer && <p class="disclaimer">{disclaimer}</p>}
+</article>

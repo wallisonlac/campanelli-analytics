@@ -1,0 +1,43 @@
+---
+import SEO from "../components/SEO.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+export interface Props {
+  lang: "en" | "pt";
+  htmlLang: string;
+  title: string;
+  description: string;
+  path: string;
+  altPath: string;
+  nav: Record<string, string>;
+  footer: Record<string, string>;
+  privacyPath: string;
+  termsPath: string;
+  linkedin: string;
+  github: string;
+}
+
+const {
+  lang, htmlLang, title, description, path, altPath,
+  nav, footer, privacyPath, termsPath, linkedin, github,
+} = Astro.props;
+---
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <SEO lang={lang} title={title} description={description} path={path} altPath={altPath} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <Header lang={lang} nav={nav} altPath={altPath} />
+    <main id="main-content">
+      <slot />
+    </main>
+    <Footer lang={lang} footer={footer} privacyPath={privacyPath} termsPath={termsPath} linkedin={linkedin} github={github} />
+  </body>
+</html>
