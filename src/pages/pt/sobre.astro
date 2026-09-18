@@ -1,37 +1,81 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../../components/Hero.astro";
+import CTASection from "../../components/CTASection.astro";
 import content from "../../content/pt.json";
-const { about, footer, nav, meta } = content;
+
+const { hero, differentiators, homeGlobalDelivery, homePartnerships, leadership, selectedExperience, finalCta, footer, nav, meta } = content;
 ---
 <BaseLayout
   lang="pt" htmlLang={content.htmlLang}
-  title={meta.about.title} description={meta.about.description}
-  path="/pt/sobre/" altPath="/en/about/"
+  title={meta.home.title} description={meta.home.description}
+  path="/pt/" altPath="/en/"
   nav={nav} footer={footer}
   privacyPath="/pt/privacidade/" termsPath="/pt/termos/"
-  linkedin={about.linkedin} github={about.github}
+  linkedin={leadership.linkedin} github={leadership.github}
 >
-  <section class="section section--dark">
-    <div class="container">
-      <h1>{about.title}</h1>
-      <p>{about.story}</p>
-      <p>{about.storyExtra}</p>
-    </div>
-  </section>
+  <Hero {...hero} />
+
   <section class="section">
     <div class="container">
+      <h2>Por que a Campanelli Analytics</h2>
+      <div class="grid">
+        {differentiators.map((d) => (
+          <div class="card">
+            <h3>{d.title}</h3>
+            <p>{d.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container grid--2 grid">
+      <div>
+        <h2>{homeGlobalDelivery.title}</h2>
+        <p>{homeGlobalDelivery.text}</p>
+        <a class="btn btn--primary" href={homeGlobalDelivery.link}>{homeGlobalDelivery.linkLabel}</a>
+      </div>
+      <div>
+        <h2>{homePartnerships.title}</h2>
+        <p>{homePartnerships.text}</p>
+        <a class="btn btn--primary" href={homePartnerships.link}>{homePartnerships.linkLabel}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>{leadership.sectionTitle}</h2>
       <div class="leadership">
-        <div class="leadership__photo" aria-hidden="true">{about.photoPlaceholder}</div>
+        <div class="leadership__photo">
+          <img
+            src={leadership.photoPlaceholder}
+            alt="Wallison Campanelli — Fundador e Diretor Técnico"
+            loading="lazy"
+          />
+        </div>
         <div>
-          <h2>{about.founderTitle}</h2>
-          {about.founderBio.map((p) => <p>{p}</p>)}
+          <h3>{leadership.name} — {leadership.role}</h3>
+          <p>{leadership.bio}</p>
           <p>
-            <a href={about.linkedin} rel="noopener">{about.linkedinLabel}</a> ·
-            <a href={about.github} rel="noopener">{about.githubLabel}</a>
+            <a href={leadership.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+            <a href={leadership.github} target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
         </div>
       </div>
-      <p class="disclaimer-box">{about.founderNote}</p>
     </div>
   </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <h2>{selectedExperience.title}</h2>
+      <ul class="list-plain">
+        {selectedExperience.items.map((i) => <li>{i}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <CTASection title={finalCta.title} text={finalCta.text} cta={finalCta.cta} />
 </BaseLayout>
