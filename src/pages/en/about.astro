@@ -18,19 +18,36 @@ const { about, footer, nav, meta } = content;
       <p>{about.storyExtra}</p>
     </div>
   </section>
+
   <section class="section">
     <div class="container">
       <div class="leadership">
-        <div class="leadership__photo" aria-hidden="true">{about.photoPlaceholder}</div>
+        <div class="leadership__photo">
+          <img
+            src={about.photoPlaceholder}
+            alt="Wallison Campanelli — Founder and Data Engineering Consultant"
+            loading="lazy"
+          />
+        </div>
+
         <div>
           <h2>{about.founderTitle}</h2>
           {about.founderBio.map((p) => <p>{p}</p>)}
           <p>
-            <a href={about.linkedin} rel="noopener">{about.linkedinLabel}</a> ·
-            <a href={about.github} rel="noopener">{about.githubLabel}</a>
+            <a href={about.linkedin} target="_blank" rel="noopener noreferrer">{about.linkedinLabel}</a> ·
+            <a href={about.github} target="_blank" rel="noopener noreferrer">{about.githubLabel}</a>
           </p>
         </div>
       </div>
+
+      <div class="company-logo">
+        <img
+          src={about.logoPlaceholder}
+          alt="Campanelli Analytics"
+          loading="lazy"
+        />
+      </div>
+
       <p class="disclaimer-box">{about.founderNote}</p>
     </div>
   </section>
