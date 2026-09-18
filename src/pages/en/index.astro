@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../../components/Hero.astro";
+import CTASection from "../../components/CTASection.astro";
+import content from "../../content/en.json";
+
+const { hero, differentiators, homeGlobalDelivery, homePartnerships, leadership, selectedExperience, finalCta, footer, nav, meta } = content;
+---
+<BaseLayout
+  lang="en" htmlLang={content.htmlLang}
+  title={meta.home.title} description={meta.home.description}
+  path="/en/" altPath="/pt/"
+  nav={nav} footer={footer}
+  privacyPath="/en/privacy/" termsPath="/en/terms/"
+  linkedin={leadership.linkedin} github={leadership.github}
+>
+  <Hero {...hero} />
+
+  <section class="section">
+    <div class="container">
+      <h2>Why Campanelli Analytics</h2>
+      <div class="grid">
+        {differentiators.map((d) => (
+          <div class="card">
+            <h3>{d.title}</h3>
+            <p>{d.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container grid--2 grid">
+      <div>
+        <h2>{homeGlobalDelivery.title}</h2>
+        <p>{homeGlobalDelivery.text}</p>
+        <a class="btn btn--primary" href={homeGlobalDelivery.link}>{homeGlobalDelivery.linkLabel}</a>
+      </div>
+      <div>
+        <h2>{homePartnerships.title}</h2>
+        <p>{homePartnerships.text}</p>
+        <a class="btn btn--primary" href={homePartnerships.link}>{homePartnerships.linkLabel}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>{leadership.sectionTitle}</h2>
+      <div class="leadership">
+        <div class="leadership__photo" aria-hidden="true">{leadership.photoPlaceholder}</div>
+        <div>
+          <h3>{leadership.name} — {leadership.role}</h3>
+          <p>{leadership.bio}</p>
+          <p>
+            <a href={leadership.linkedin} rel="noopener">LinkedIn</a> ·
+            <a href={leadership.github} rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <h2>{selectedExperience.title}</h2>
+      <ul class="list-plain">
+        {selectedExperience.items.map((i) => <li>{i}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <CTASection title={finalCta.title} text={finalCta.text} cta={finalCta.cta} />
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import content from "../../content/en.json";
+const { globalDelivery, leadership, footer, nav, meta } = content;
+---
+<BaseLayout
+  lang="en" htmlLang={content.htmlLang}
+  title={meta.globalDelivery.title} description={meta.globalDelivery.description}
+  path="/en/global-delivery/" altPath="/pt/entrega-internacional/"
+  nav={nav} footer={footer}
+  privacyPath="/en/privacy/" termsPath="/en/terms/"
+  linkedin={leadership.linkedin} github={leadership.github}
+>
+  <section class="section section--dark">
+    <div class="container">
+      <h1>{globalDelivery.title}</h1>
+      <p>{globalDelivery.subtitle}</p>
+      <p>{globalDelivery.text}</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h2>{globalDelivery.modelsTitle}</h2>
+      <ul class="list-plain">
+        {globalDelivery.models.map((m) => <li>{m}</li>)}
+      </ul>
+      <div class="disclaimer-box">{globalDelivery.disclaimer}</div>
+    </div>
+  </section>
+</BaseLayout>

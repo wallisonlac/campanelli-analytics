@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactForm from "../../components/ContactForm.astro";
+import content from "../../content/en.json";
+const { contact, leadership, footer, nav, meta } = content;
+---
+<BaseLayout
+  lang="en" htmlLang={content.htmlLang}
+  title={meta.contact.title} description={meta.contact.description}
+  path="/en/contact/" altPath="/pt/contato/"
+  nav={nav} footer={footer}
+  privacyPath="/en/privacy/" termsPath="/en/terms/"
+  linkedin={leadership.linkedin} github={leadership.github}
+>
+  <section class="section section--dark">
+    <div class="container">
+      <h1>{contact.title}</h1>
+      <p>{contact.intro}</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container grid grid--2">
+      <ContactForm lang="en" contact={contact} />
+      <div>
+        <dl class="contact-meta">
+          <dt>Email</dt>
+          <dd><a href={`mailto:${contact.email}`}>{contact.email}</a></dd>
+          <dt>LinkedIn</dt>
+          <dd><a href={contact.linkedin} rel="noopener">{contact.linkedin}</a></dd>
+          <dt>GitHub</dt>
+          <dd><a href={contact.github} rel="noopener">{contact.github}</a></dd>
+          <dt>Meeting link</dt>
+          <dd><a href={contact.calendly} rel="noopener">{contact.calendly}</a></dd>
+          <dt>Location</dt>
+          <dd>{contact.location}</dd>
+          <dt>Languages</dt>
+          <dd>{contact.languages}</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

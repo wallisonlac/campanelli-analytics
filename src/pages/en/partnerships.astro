@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import content from "../../content/en.json";
+const { partnerships, leadership, footer, nav, meta } = content;
+---
+<BaseLayout
+  lang="en" htmlLang={content.htmlLang}
+  title={meta.partnerships.title} description={meta.partnerships.description}
+  path="/en/partnerships/" altPath="/pt/parcerias/"
+  nav={nav} footer={footer}
+  privacyPath="/en/privacy/" termsPath="/en/terms/"
+  linkedin={leadership.linkedin} github={leadership.github}
+>
+  <section class="section section--dark">
+    <div class="container">
+      <h1>{partnerships.title}</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container grid grid--2">
+      <div class="card">
+        <h2>{partnerships.path1.title}</h2>
+        <p>{partnerships.path1.text}</p>
+        <ul class="list-plain">
+          {partnerships.path1.models.map((m) => <li>{m}</li>)}
+        </ul>
+        <a class="btn btn--primary" href={partnerships.path1.cta.href}>{partnerships.path1.cta.label}</a>
+      </div>
+      <div class="card">
+        <h2>{partnerships.path2.title}</h2>
+        <p>{partnerships.path2.text}</p>
+        <ul class="list-plain">
+          {partnerships.path2.models.map((m) => <li>{m}</li>)}
+        </ul>
+        <a class="btn btn--primary" href={partnerships.path2.cta.href}>{partnerships.path2.cta.label}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
