@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import content from "../../content/pt.json";
+const { privacy, leadership, footer, nav, meta } = content;
+---
+<BaseLayout
+  lang="pt" htmlLang={content.htmlLang}
+  title={meta.privacy.title} description={meta.privacy.description}
+  path="/pt/privacidade/" altPath="/en/privacy/"
+  nav={nav} footer={footer}
+  privacyPath="/pt/privacidade/" termsPath="/pt/termos/"
+  linkedin={leadership.linkedin} github={leadership.github}
+>
+  <section class="section">
+    <div class="container">
+      <h1>{privacy.title}</h1>
+      {privacy.sections.map((s) => (
+        <div>
+          <h2>{s.heading}</h2>
+          <p>{s.text}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

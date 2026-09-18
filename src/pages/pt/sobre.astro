@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import content from "../../content/pt.json";
+const { about, footer, nav, meta } = content;
+---
+<BaseLayout
+  lang="pt" htmlLang={content.htmlLang}
+  title={meta.about.title} description={meta.about.description}
+  path="/pt/sobre/" altPath="/en/about/"
+  nav={nav} footer={footer}
+  privacyPath="/pt/privacidade/" termsPath="/pt/termos/"
+  linkedin={about.linkedin} github={about.github}
+>
+  <section class="section section--dark">
+    <div class="container">
+      <h1>{about.title}</h1>
+      <p>{about.story}</p>
+      <p>{about.storyExtra}</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="leadership">
+        <div class="leadership__photo" aria-hidden="true">{about.photoPlaceholder}</div>
+        <div>
+          <h2>{about.founderTitle}</h2>
+          {about.founderBio.map((p) => <p>{p}</p>)}
+          <p>
+            <a href={about.linkedin} rel="noopener">{about.linkedinLabel}</a> ·
+            <a href={about.github} rel="noopener">{about.githubLabel}</a>
+          </p>
+        </div>
+      </div>
+      <p class="disclaimer-box">{about.founderNote}</p>
+    </div>
+  </section>
+</BaseLayout>
