@@ -42,8 +42,8 @@
   "leadership": {
     "sectionTitle": "Liderança Técnica",
     "name": "Wallison Campanelli",
-    "role": "Fundador e Diretor Técnico",
-    "bio": "Senior Data Engineer e profissional de Data & AI. Doutorando em Física na Universidade de Lisboa e colaborador do LIP — Laboratório de Instrumentação e Física Experimental de Partículas, em Portugal, atuando em simulação e calibração de detectores para experimentos de neutrinos, incluindo DUNE, SBND e ProtoDUNE 2. Combina engenharia de dados, computação científica e IA aplicada para resolver problemas complexos e intensivos em dados.",
+    "role": "Fundador & Data Engineering Consultant",
+    "bio": "Wallison Campanelli é Data Engineer e fundador da Campanelli Analytics. Ajuda empresas, consultorias e equipes de produto a transformar dados em operações mais confiáveis, decisões mais rápidas e resultados mensuráveis. Atua em projetos de engenharia de dados, plataformas cloud, automação, analytics e soluções orientadas por IA — da arquitetura à implementação prática. Combina experiência hands-on em pipelines ETL/ELT, modelagem de dados, Azure, Databricks, Microsoft Fabric, Snowflake, PySpark, SQL e Power BI para entregar soluções escaláveis, governadas e alinhadas às prioridades do negócio. PhD em Física, traz rigor analítico, visão sistêmica e capacidade de resolver problemas complexos para projetos B2B no Brasil e internacionalmente.",
     "photoPlaceholder": "/wallison.jpeg",
     "linkedin": "https://www.linkedin.com/in/wallison-campanelli-eng/",
     "github": "https://github.com/wallisonlac"
