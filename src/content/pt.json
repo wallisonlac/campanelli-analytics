@@ -1,0 +1,149 @@
+{
+  "lang": "pt",
+  "htmlLang": "pt-BR",
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "globalDelivery": "Entrega Internacional",
+    "partnerships": "Parcerias",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "meta": {
+    "home": { "title": "Campanelli Analytics | Dados, Cloud e IA para Times Globais", "description": "Consultoria brasileira de tecnologia entregando engenharia de dados, cloud, analytics, IA e software para organizações no Brasil e no exterior." },
+    "services": { "title": "Serviços | Campanelli Analytics", "description": "Engenharia de dados, cloud e lakehouse, BI, IA aplicada, desenvolvimento de software, consultoria técnica e times dedicados — entrega B2B e remota." },
+    "globalDelivery": { "title": "Entrega Internacional | Campanelli Analytics", "description": "Entrega sênior em dados, cloud, IA e software para organizações que trabalham além das fronteiras, a partir do Brasil e de Portugal." },
+    "partnerships": { "title": "Parcerias | Campanelli Analytics", "description": "Expanda para o Brasil e a América Latina, ou contrate uma parceira de entrega remota sênior para projetos globais de dados e tecnologia." },
+    "about": { "title": "Sobre | Campanelli Analytics", "description": "A Campanelli Analytics é uma consultoria brasileira de dados, cloud e IA fundada por Wallison Campanelli, engenheiro de dados sênior e pesquisador em física." },
+    "contact": { "title": "Contato | Campanelli Analytics", "description": "Vamos conversar sobre seu projeto, desafio de entrega ou oportunidade de parceria com a Campanelli Analytics." },
+    "privacy": { "title": "Política de Privacidade | Campanelli Analytics", "description": "Como a Campanelli Analytics trata dados de contato fornecidos voluntariamente por este site." },
+    "terms": { "title": "Termos de Uso | Campanelli Analytics", "description": "Termos de uso do site da Campanelli Analytics." }
+  },
+  "hero": {
+    "eyebrow": "Consultoria brasileira de tecnologia · Entrega global",
+    "title": "Dados, Cloud e IA para Times Globais",
+    "subtitle": "A Campanelli Analytics é uma consultoria brasileira de tecnologia que apoia organizações no Brasil e no exterior com engenharia de dados, plataformas cloud, analytics, inteligência artificial e desenvolvimento de software.",
+    "text": "Trabalhamos com empresas, consultorias e times de tecnologia no Brasil, Europa, América do Norte e América Latina, oferecendo expertise técnica sênior por meio de modelos remotos, flexíveis e orientados a projetos.",
+    "credibility": "Presença empresarial no Brasil. Experiência internacional. Mentalidade de entrega global.",
+    "ctas": [
+      { "label": "Falar sobre um projeto", "href": "/pt/contato/", "variant": "primary" },
+      { "label": "Explorar opções de parceria", "href": "/pt/parcerias/", "variant": "secondary" },
+      { "label": "Montar um time dedicado", "href": "/pt/entrega-internacional/", "variant": "secondary" }
+    ]
+  },
+  "differentiators": [
+    { "title": "Rigor técnico", "desc": "Disciplina de computação científica aplicada a problemas complexos e intensivos em dados." },
+    { "title": "Execução sênior", "desc": "Entrega prática da arquitetura à implementação, sem camadas desnecessárias." },
+    { "title": "Colaboração remota", "desc": "Construída para times distribuídos que trabalham entre fusos horários e fronteiras." },
+    { "title": "Contratação flexível", "desc": "Por projeto, time-and-materials, capacidade dedicada ou staff augmentation, conforme necessário." }
+  ],
+  "homeGlobalDelivery": { "title": "Entrega Internacional", "text": "Entrega sênior em dados, cloud, IA e software para organizações que trabalham além das fronteiras — remota, flexível e B2B.", "link": "/pt/entrega-internacional/", "linkLabel": "Veja como entregamos internacionalmente" },
+  "homePartnerships": { "title": "Parcerias", "text": "Uma parceira técnica para consultorias que expandem para o Brasil e a América Latina, e para organizações que contratam capacidade remota sênior.", "link": "/pt/parcerias/", "linkLabel": "Explore os caminhos de parceria" },
+  "leadership": {
+    "sectionTitle": "Liderança Técnica",
+    "name": "Wallison Campanelli",
+    "role": "Fundador e Diretor Técnico",
+    "bio": "Senior Data Engineer e profissional de Data & AI. Doutorando em Física na Universidade de Lisboa e colaborador do LIP — Laboratório de Instrumentação e Física Experimental de Partículas, em Portugal, atuando em simulação e calibração de detectores para experimentos de neutrinos, incluindo DUNE, SBND e ProtoDUNE 2. Combina engenharia de dados, computação científica e IA aplicada para resolver problemas complexos e intensivos em dados.",
+    "photoPlaceholder": "[SUBSTITUIR_POR_FOTO]",
+    "linkedin": "[SUBSTITUIR_POR_LINKEDIN]",
+    "github": "[SUBSTITUIR_POR_GITHUB]"
+  },
+  "selectedExperience": {
+    "title": "Experiência Técnica Selecionada",
+    "items": [
+      "Desenho de pipelines escaláveis de dados, ETL/ELT e fluxos analíticos.",
+      "Construção de modelos de dados, dashboards e sistemas de apoio à decisão.",
+      "Trabalho com Azure, Databricks, Microsoft Fabric, Snowflake, PySpark, SQL e Power BI.",
+      "Automação de fluxos de dados e melhoria da confiabilidade operacional.",
+      "Aplicação de práticas de computação científica a problemas complexos e intensivos em dados.",
+      "Desenvolvimento de fluxos de simulação, calibração e analytics em ambientes internacionais de pesquisa.",
+      "Combinação de engenharia de dados, desenvolvimento de software e IA aplicada para desafios técnicos complexos."
+    ]
+  },
+  "finalCta": { "title": "Vamos construir sua próxima iniciativa de dados ou IA.", "text": "Fale sobre um projeto, um time dedicado ou uma oportunidade de parceria.", "cta": { "label": "Falar sobre um projeto", "href": "/pt/contato/" } },
+  "services": {
+    "title": "Serviços",
+    "intro": "Entrega técnica sênior em todo o ciclo de dados, cloud, IA e software — da arquitetura à implementação prática.",
+    "items": [
+      { "title": "Engenharia de Dados & Plataformas Modernas", "description": "Desenho e entrega de pipelines de dados escaláveis, fluxos ETL/ELT, integração de dados, APIs, frameworks de ingestão, data lakes, data warehouses e arquiteturas lakehouse.", "bullets": ["Integração de fontes", "Pipelines batch e streaming quando aplicável", "Modelagem de dados", "Orquestração", "Qualidade de dados", "Observabilidade", "Documentação", "Confiabilidade operacional", "Performance e escalabilidade"] },
+      { "title": "Cloud Data & Lakehouse", "description": "Plataformas de dados em cloud e soluções lakehouse desenhadas para escalabilidade, governança, analytics e eficiência operacional.", "bullets": ["Microsoft Azure", "Azure Data Factory", "Azure Databricks", "Microsoft Fabric", "Snowflake", "Spark / PySpark", "Cloud storage", "Data warehouses", "Stacks modernos de analytics"] },
+      { "title": "Business Intelligence & Analytics", "description": "Relatórios confiáveis, modelos semânticos, dashboards e sistemas analíticos que transformam dados operacionais em informações prontas para tomada de decisão.", "bullets": ["Power BI", "SQL", "Modelagem de dados", "Camada semântica", "KPIs", "Dashboards executivos", "Automação de reporting", "Self-service analytics", "Métricas consistentes e governadas"] },
+      { "title": "IA Aplicada, Machine Learning & Automação", "description": "Soluções práticas de inteligência artificial, machine learning e automação voltadas a melhorar processos, acelerar decisões e gerar valor operacional mensurável.", "bullets": ["Machine learning aplicado", "Classificação", "Previsão", "Anomaly detection", "Automação de processos", "Integração de IA em fluxos de negócio", "Visão computacional quando aplicável", "Soluções baseadas em dados e IA"] },
+      { "title": "Software & Data Product Development", "description": "Software sob medida, APIs, ferramentas internas, integrações e produtos de dados que apoiam operações modernas e equipes orientadas por dados.", "bullets": ["Python", "APIs", "Integrações", "Ferramentas internas", "Automação", "Aplicações orientadas a dados", "Desenvolvimento de produtos internos", "Soluções para times de dados e operações"] },
+      { "title": "Consultoria Técnica & Arquitetura", "description": "Consultoria técnica independente para decisões de arquitetura, avaliação de plataformas de dados, planejamento de entrega, troubleshooting e melhoria de performance.", "bullets": ["Assessment técnico", "Diagnóstico de maturidade", "Arquitetura de dados", "Roadmaps", "Revisão de pipelines", "Revisão de custos", "Segurança e governança como considerações de arquitetura", "Melhoria de performance", "Orientação para liderança técnica"] },
+      { "title": "Times Dedicados, Outsourcing & Staff Augmentation", "description": "Acesso flexível a profissionais experientes em dados, cloud, analytics, IA e software por meio de modelos de projeto, equipes dedicadas ou staff augmentation.", "bullets": ["Profissionais dedicados", "Capacidade técnica especializada", "Squads remotos", "Outsourcing", "Staff augmentation", "Composição de times conforme necessidades do projeto", "Possibilidade de utilizar empregados, contratados independentes e parceiros especializados", "Modelos de contratação definidos caso a caso"], "disclaimer": "A composição da equipe e a estrutura de contratação são definidas de acordo com os requisitos do projeto, a localização do cliente e as considerações contratuais, fiscais e legais aplicáveis." },
+      { "title": "Parceria Internacional & Entrega Brasil/América Latina", "description": "Uma parceira técnica e empresarial para consultorias internacionais e empresas de tecnologia que avaliam entrega, clientes ou oportunidades de mercado envolvendo o Brasil e a América Latina.", "bullets": ["Entrega técnica", "Coordenação local", "Suporte a stakeholders", "Subcontratação", "Comunicação com times brasileiros", "Capacidade especializada", "Discussão de expansão comercial e de delivery", "Apoio a oportunidades no Brasil", "Avaliação de projetos na América Latina conforme escopo, país e modelo de parceria"] }
+    ]
+  },
+  "globalDelivery": {
+    "title": "Entrega Internacional a Partir do Brasil e de Portugal",
+    "subtitle": "Entrega sênior em dados, cloud, IA e software para organizações que trabalham além das fronteiras.",
+    "text": "A Campanelli Analytics trabalha com organizações que precisam de entrega técnica experiente sem o custo, o tempo e a complexidade de montar internamente uma equipe altamente especializada. Apoiamos projetos internacionais por meio de colaboração remota, execução técnica prática e modelos flexíveis de contratação B2B. De iniciativas de plataformas modernas de dados a analytics em cloud, automação com IA e software sob medida, ajudamos clientes a sair da estratégia técnica e chegar a uma implementação confiável.",
+    "modelsTitle": "Podemos atuar por meio de:",
+    "models": ["Consultoria por projeto", "Entrega técnica com escopo fechado", "Contratos por horas ou time-and-materials", "Engenheiros dedicados ou squads de entrega", "Staff augmentation e capacidade especializada", "Subcontratação para consultorias e integradores", "Discovery técnico, arquitetura e advisory", "Colaboração remota com times globais", "Entrega em parceria para Brasil e América Latina"],
+    "disclaimer": "Projetos internacionais são estruturados conforme o escopo, a localização do cliente, o modelo contratual e os requisitos fiscais, legais e regulatórios aplicáveis."
+  },
+  "partnerships": {
+    "title": "Parcerias",
+    "path1": { "title": "Expanda para o Brasil e a América Latina com uma parceira técnica confiável", "text": "A Campanelli Analytics pode apoiar consultorias internacionais, empresas de tecnologia e times de entrega que precisam de uma parceira brasileira tecnicamente forte para projetos, conversas com clientes e coordenação local envolvendo o Brasil.", "models": ["Entrega técnica de projetos", "Coordenação local de stakeholders", "Capacidade especializada", "Apoio à subcontratação", "Colaboração com clientes focada no Brasil", "Entrega em parceria", "Avaliação de oportunidades para Brasil e América Latina", "Representação técnica em conversas com clientes, quando aplicável"], "cta": { "label": "Expandir para o Brasil e a América Latina", "href": "/pt/contato/" } },
+    "path2": { "title": "Contrate uma parceira de entrega sênior para projetos globais", "text": "Organizações fora do Brasil podem contratar diretamente a Campanelli Analytics para consultoria, arquitetura, entrega técnica, capacidade dedicada e projetos de dados, cloud, IA e software.", "models": ["Consultoria em dados e cloud", "Arquitetura e advisory técnico", "Entrega baseada em projeto", "Especialistas dedicados", "Squads de entrega remota", "Outsourcing e staff augmentation, conforme o modelo de contratação aplicável", "Subcontratação para consultorias e integradores"], "cta": { "label": "Entregar um Projeto Global Conosco", "href": "/pt/contato/" } }
+  },
+  "about": {
+    "title": "Sobre a Campanelli Analytics",
+    "story": "A Campanelli Analytics LTDA. é uma consultoria brasileira de tecnologia focada em engenharia de dados, plataformas cloud, analytics, IA aplicada e desenvolvimento de software. Sediada em Muzambinho, Minas Gerais, Brasil, a empresa trabalha com organizações no Brasil e no exterior, combinando rigor técnico com entrega prática e orientada a resultados.",
+    "storyExtra": "Brasil-based. Globalmente conectada. A Campanelli Analytics combina presença empresarial no Brasil com mentalidade de entrega internacional, atendendo clientes no Brasil, Portugal, União Europeia, Reino Unido, Estados Unidos, Canadá, América Latina e outros mercados — conforme os requisitos contratuais, fiscais, legais e regulatórios aplicáveis a cada contratação.",
+    "founderTitle": "Fundador e Diretor Técnico",
+    "founderBio": [
+      "Wallison Campanelli é Senior Data Engineer e profissional de Data & AI, e doutorando em Física na Universidade de Lisboa.",
+      "É colaborador do LIP — Laboratório de Instrumentação e Física Experimental de Partículas, em Portugal, atuando em simulação e calibração de detectores para experimentos de neutrinos, incluindo DUNE, SBND e ProtoDUNE 2.",
+      "Sua trajetória profissional abrange engenharia de dados, ETL/ELT, automação, analytics, modelagem de dados, dashboards e soluções de decisão orientadas por dados, com competências técnicas em Azure, Databricks, Microsoft Fabric, Snowflake, PySpark, Python, SQL, Power BI, dbt, Kafka, Airflow, Docker e GitHub Actions.",
+      "Fluente em português e inglês, com espanhol intermediário. Atua entre Brasil e Portugal, com orientação internacional."
+    ],
+    "founderNote": "A experiência de pesquisa é apresentada como prova de profundidade técnica — não como um currículo acadêmico. A Campanelli Analytics não afirma afiliação formal ao CERN e não utiliza logotipos do CERN, DUNE, SBND, ProtoDUNE, Universidade de Lisboa ou LIP sem autorização.",
+    "photoPlaceholder": "[SUBSTITUIR_POR_FOTO]",
+    "logoPlaceholder": "[SUBSTITUIR_POR_LOGO]",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "linkedin": "[SUBSTITUIR_POR_LINKEDIN]",
+    "github": "[SUBSTITUIR_POR_GITHUB]"
+  },
+  "contact": {
+    "title": "Contato",
+    "intro": "Vamos conversar sobre seu projeto, desafio de entrega ou oportunidade de parceria.",
+    "email": "[SUBSTITUIR_POR_EMAIL]",
+    "linkedin": "[SUBSTITUIR_POR_LINKEDIN]",
+    "github": "[SUBSTITUIR_POR_GITHUB]",
+    "calendly": "[SUBSTITUIR_POR_CALENDLY_OU_OUTRO]",
+    "location": "Brasil e Portugal",
+    "languages": "Português, inglês e espanhol",
+    "formLabels": { "name": "Nome", "email": "E-mail corporativo", "company": "Empresa", "country": "País", "interest": "Tenho interesse em", "details": "Detalhes do projeto", "timeline": "Prazo estimado", "consent": "Concordo em ser contatado(a) sobre esta solicitação.", "submit": "Enviar mensagem" },
+    "interestOptions": ["Engenharia de Dados", "Cloud & Lakehouse", "Analytics & BI", "IA & Automação", "Desenvolvimento de Software", "Consultoria Técnica", "Time Dedicado / Outsourcing", "Staff Augmentation", "Parceria Internacional", "Entrega Brasil / América Latina", "Outro"]
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "sections": [
+      { "heading": "Visão geral", "text": "Esta Política de Privacidade explica como a Campanelli Analytics LTDA. trata as informações enviadas voluntariamente pelo formulário de contato ou por e-mail deste site." },
+      { "heading": "O que coletamos", "text": "Ao nos contatar, podemos processar as informações fornecidas, como nome, e-mail corporativo, empresa, país e detalhes do projeto, exclusivamente para responder à sua solicitação." },
+      { "heading": "Como usamos", "text": "As informações enviadas por este site são usadas apenas para avaliar e responder à sua solicitação. Não vendemos informações de contato a terceiros." },
+      { "heading": "Contato sobre privacidade", "text": "Para dúvidas sobre esta política ou sobre seus dados, entre em contato pelo e-mail [SUBSTITUIR_POR_EMAIL]." }
+    ]
+  },
+  "terms": {
+    "title": "Termos de Uso",
+    "sections": [
+      { "heading": "Aceitação", "text": "Ao acessar este site, você concorda com estes termos de uso." },
+      { "heading": "Finalidade do site", "text": "Este site apresenta informações institucionais, comerciais e técnicas sobre a Campanelli Analytics LTDA. Não constitui uma oferta comercial vinculante; as condições de contratação são definidas em contratos individuais." },
+      { "heading": "Sem garantias", "text": "O conteúdo é fornecido \"como está\", para fins informativos. A Campanelli Analytics faz esforços razoáveis para manter as informações precisas e atualizadas." },
+      { "heading": "Contato", "text": "Para dúvidas sobre estes termos, entre em contato pelo e-mail [SUBSTITUIR_POR_EMAIL]." }
+    ]
+  },
+  "footer": {
+    "companyLine": "Campanelli Analytics LTDA.",
+    "cnpjLine": "CNPJ: 62.856.593/0001-40",
+    "positioningLine": "Brazil-based Data, Cloud & AI Consultancy",
+    "locationLine": "Brazil · Portugal · Global Delivery",
+    "privacyLabel": "Privacy Policy",
+    "termsLabel": "Terms of Use",
+    "langLabel": "Language"
+  }
+}
