@@ -44,7 +44,7 @@
     "name": "Wallison Campanelli",
     "role": "Fundador e Diretor Técnico",
     "bio": "Senior Data Engineer e profissional de Data & AI. Doutorando em Física na Universidade de Lisboa e colaborador do LIP — Laboratório de Instrumentação e Física Experimental de Partículas, em Portugal, atuando em simulação e calibração de detectores para experimentos de neutrinos, incluindo DUNE, SBND e ProtoDUNE 2. Combina engenharia de dados, computação científica e IA aplicada para resolver problemas complexos e intensivos em dados.",
-    "photoPlaceholder": "public/wallison.jpeg",
+    "photoPlaceholder": "/wallison.jpeg",
     "linkedin": "https://www.linkedin.com/in/wallison-campanelli-eng/",
     "github": "https://github.com/wallisonlac"
   },
@@ -100,8 +100,8 @@
       "Fluente em português e inglês, com espanhol intermediário. Atua entre Brasil e Portugal, com orientação internacional."
     ],
     "founderNote": "A experiência de pesquisa é apresentada como prova de profundidade técnica — não como um currículo acadêmico. A Campanelli Analytics não afirma afiliação formal ao CERN e não utiliza logotipos do CERN, DUNE, SBND, ProtoDUNE, Universidade de Lisboa ou LIP sem autorização.",
-    "photoPlaceholder": "public/wallison.jpeg",
-    "logoPlaceholder": "public/logoempresa.png",
+    "photoPlaceholder": "/wallison.jpeg",
+    "logoPlaceholder": "/logoempresa.png",
     "linkedinLabel": "LinkedIn",
     "githubLabel": "GitHub",
     "linkedin": "https://www.linkedin.com/in/wallison-campanelli-eng/",
