@@ -44,9 +44,9 @@
     "name": "Wallison Campanelli",
     "role": "Fundador e Diretor Técnico",
     "bio": "Senior Data Engineer e profissional de Data & AI. Doutorando em Física na Universidade de Lisboa e colaborador do LIP — Laboratório de Instrumentação e Física Experimental de Partículas, em Portugal, atuando em simulação e calibração de detectores para experimentos de neutrinos, incluindo DUNE, SBND e ProtoDUNE 2. Combina engenharia de dados, computação científica e IA aplicada para resolver problemas complexos e intensivos em dados.",
-    "photoPlaceholder": "[SUBSTITUIR_POR_FOTO]",
-    "linkedin": "[SUBSTITUIR_POR_LINKEDIN]",
-    "github": "[SUBSTITUIR_POR_GITHUB]"
+    "photoPlaceholder": "public/wallison.jpeg",
+    "linkedin": "https://www.linkedin.com/in/wallison-campanelli-eng/",
+    "github": "https://github.com/wallisonlac"
   },
   "selectedExperience": {
     "title": "Experiência Técnica Selecionada",
@@ -100,20 +100,20 @@
       "Fluente em português e inglês, com espanhol intermediário. Atua entre Brasil e Portugal, com orientação internacional."
     ],
     "founderNote": "A experiência de pesquisa é apresentada como prova de profundidade técnica — não como um currículo acadêmico. A Campanelli Analytics não afirma afiliação formal ao CERN e não utiliza logotipos do CERN, DUNE, SBND, ProtoDUNE, Universidade de Lisboa ou LIP sem autorização.",
-    "photoPlaceholder": "[SUBSTITUIR_POR_FOTO]",
-    "logoPlaceholder": "[SUBSTITUIR_POR_LOGO]",
+    "photoPlaceholder": "public/wallison.jpeg",
+    "logoPlaceholder": "public/logoempresa.png",
     "linkedinLabel": "LinkedIn",
     "githubLabel": "GitHub",
-    "linkedin": "[SUBSTITUIR_POR_LINKEDIN]",
-    "github": "[SUBSTITUIR_POR_GITHUB]"
+    "linkedin": "https://www.linkedin.com/in/wallison-campanelli-eng/",
+    "github": "https://github.com/wallisonlac"
   },
   "contact": {
     "title": "Contato",
     "intro": "Vamos conversar sobre seu projeto, desafio de entrega ou oportunidade de parceria.",
     "email": "wallisoncampanelli.eng@gmail.com",
-    "linkedin": "[SUBSTITUIR_POR_LINKEDIN]",
-    "github": "[SUBSTITUIR_POR_GITHUB]",
-    "calendly": "[SUBSTITUIR_POR_CALENDLY_OU_OUTRO]",
+    "linkedin": "https://www.linkedin.com/in/wallison-campanelli-eng/",
+    "github": "https://github.com/wallisonlac",
+    "calendly": "https://calendly.com/wallisoncampanelli-eng/30min",
     "whatsapp": "+351 935 678 698",
     "whatsappLink": "https://wa.me/351935678698",
     "whatsappLabel": "WhatsApp",
