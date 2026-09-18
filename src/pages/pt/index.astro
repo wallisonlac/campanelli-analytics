@@ -49,13 +49,19 @@ const { hero, differentiators, homeGlobalDelivery, homePartnerships, leadership,
     <div class="container">
       <h2>{leadership.sectionTitle}</h2>
       <div class="leadership">
-        <div class="leadership__photo" aria-hidden="true">{leadership.photoPlaceholder}</div>
+        <div class="leadership__photo">
+          <img
+            src={leadership.photoPlaceholder}
+            alt="Wallison Campanelli — Fundador e Diretor Técnico"
+            loading="lazy"
+          />
+        </div>
         <div>
           <h3>{leadership.name} — {leadership.role}</h3>
           <p>{leadership.bio}</p>
           <p>
-            <a href={leadership.linkedin} rel="noopener">LinkedIn</a> ·
-            <a href={leadership.github} rel="noopener">GitHub</a>
+            <a href={leadership.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+            <a href={leadership.github} target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
         </div>
       </div>
