@@ -110,10 +110,13 @@
   "contact": {
     "title": "Contato",
     "intro": "Vamos conversar sobre seu projeto, desafio de entrega ou oportunidade de parceria.",
-    "email": "[SUBSTITUIR_POR_EMAIL]",
+    "email": "wallisoncampanelli.eng@gmail.com",
     "linkedin": "[SUBSTITUIR_POR_LINKEDIN]",
     "github": "[SUBSTITUIR_POR_GITHUB]",
     "calendly": "[SUBSTITUIR_POR_CALENDLY_OU_OUTRO]",
+    "whatsapp": "+351 935 678 698",
+    "whatsappLink": "https://wa.me/351935678698",
+    "whatsappLabel": "WhatsApp",
     "location": "Brasil e Portugal",
     "languages": "Português, inglês e espanhol",
     "formLabels": { "name": "Nome", "email": "E-mail corporativo", "company": "Empresa", "country": "País", "interest": "Tenho interesse em", "details": "Detalhes do projeto", "timeline": "Prazo estimado", "consent": "Concordo em ser contatado(a) sobre esta solicitação.", "submit": "Enviar mensagem" },
@@ -125,7 +128,7 @@
       { "heading": "Visão geral", "text": "Esta Política de Privacidade explica como a Campanelli Analytics LTDA. trata as informações enviadas voluntariamente pelo formulário de contato ou por e-mail deste site." },
       { "heading": "O que coletamos", "text": "Ao nos contatar, podemos processar as informações fornecidas, como nome, e-mail corporativo, empresa, país e detalhes do projeto, exclusivamente para responder à sua solicitação." },
       { "heading": "Como usamos", "text": "As informações enviadas por este site são usadas apenas para avaliar e responder à sua solicitação. Não vendemos informações de contato a terceiros." },
-      { "heading": "Contato sobre privacidade", "text": "Para dúvidas sobre esta política ou sobre seus dados, entre em contato pelo e-mail [SUBSTITUIR_POR_EMAIL]." }
+      { "heading": "Contato sobre privacidade", "text": "Para dúvidas sobre esta política ou sobre seus dados, entre em contato pelo e-mail wallisoncampanelli.eng@gmail.com." }
     ]
   },
   "terms": {
@@ -134,16 +137,16 @@
       { "heading": "Aceitação", "text": "Ao acessar este site, você concorda com estes termos de uso." },
       { "heading": "Finalidade do site", "text": "Este site apresenta informações institucionais, comerciais e técnicas sobre a Campanelli Analytics LTDA. Não constitui uma oferta comercial vinculante; as condições de contratação são definidas em contratos individuais." },
       { "heading": "Sem garantias", "text": "O conteúdo é fornecido \"como está\", para fins informativos. A Campanelli Analytics faz esforços razoáveis para manter as informações precisas e atualizadas." },
-      { "heading": "Contato", "text": "Para dúvidas sobre estes termos, entre em contato pelo e-mail [SUBSTITUIR_POR_EMAIL]." }
+      { "heading": "Contato", "text": "Para dúvidas sobre estes termos, entre em contato pelo e-mail wallisoncampanelli.eng@gmail.com." }
     ]
   },
   "footer": {
     "companyLine": "Campanelli Analytics LTDA.",
     "cnpjLine": "CNPJ: 62.856.593/0001-40",
-    "positioningLine": "Brazil-based Data, Cloud & AI Consultancy",
-    "locationLine": "Brazil · Portugal · Global Delivery",
-    "privacyLabel": "Privacy Policy",
-    "termsLabel": "Terms of Use",
-    "langLabel": "Language"
+    "positioningLine": "Consultoria Brasileira de Dados, Cloud & IA",
+    "locationLine": "Brasil · Portugal · Entrega Global",
+    "privacyLabel": "Política de Privacidade",
+    "termsLabel": "Termos de Uso",
+    "langLabel": "Idioma"
   }
 }

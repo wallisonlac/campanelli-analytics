@@ -94,7 +94,11 @@
       "Combining data engineering, software development and applied AI for complex technical challenges."
     ]
   },
-  "finalCta": { "title": "Let's build your next data or AI initiative.", "text": "Discuss a project, a dedicated team or a partnership opportunity.", "cta": { "label": "Discuss a Project", "href": "/en/contact/" } },
+  "finalCta": {
+    "title": "Let's build your next data or AI initiative.",
+    "text": "Discuss a project, a dedicated team or a partnership opportunity.",
+    "cta": { "label": "Discuss a Project", "href": "/en/contact/" }
+  },
   "services": {
     "title": "Services",
     "intro": "Senior technical delivery across the data, cloud, AI and software lifecycle — from architecture to hands-on implementation.",
@@ -144,10 +148,13 @@
   "contact": {
     "title": "Contact",
     "intro": "Let's discuss your project, delivery challenge or partnership opportunity.",
-    "email": "[SUBSTITUIR_POR_EMAIL]",
+    "email": "wallisoncampanelli.eng@gmail.com",
     "linkedin": "[SUBSTITUIR_POR_LINKEDIN]",
     "github": "[SUBSTITUIR_POR_GITHUB]",
     "calendly": "[SUBSTITUIR_POR_CALENDLY_OU_OUTRO]",
+    "whatsapp": "+351 935 678 698",
+    "whatsappLink": "https://wa.me/351935678698",
+    "whatsappLabel": "WhatsApp",
     "location": "Brazil and Portugal",
     "languages": "Portuguese, English and Spanish",
     "formLabels": { "name": "Name", "email": "Work email", "company": "Company", "country": "Country", "interest": "I'm interested in", "details": "Project details", "timeline": "Estimated timeline", "consent": "I agree to be contacted about this request.", "submit": "Send message" },
@@ -159,7 +166,7 @@
       { "heading": "Overview", "text": "This Privacy Policy explains how Campanelli Analytics LTDA. handles information submitted voluntarily through this website's contact form or email." },
       { "heading": "What we collect", "text": "When you contact us, we may process the information you provide, such as name, work email, company, country and project details, solely to respond to your request." },
       { "heading": "How we use it", "text": "Information submitted through this site is used only to evaluate and respond to your inquiry. We do not sell contact information to third parties." },
-      { "heading": "Contact for privacy matters", "text": "For questions about this policy or your data, contact [SUBSTITUIR_POR_EMAIL]." }
+      { "heading": "Contact for privacy matters", "text": "For questions about this policy or your data, contact wallisoncampanelli.eng@gmail.com." }
     ]
   },
   "terms": {
@@ -168,7 +175,7 @@
       { "heading": "Acceptance", "text": "By accessing this website, you agree to these terms of use." },
       { "heading": "Purpose of the site", "text": "This website presents institutional, commercial and technical information about Campanelli Analytics LTDA. It does not constitute a binding commercial offer; engagement terms are defined in individual contracts." },
       { "heading": "No warranties", "text": "Content is provided \"as is\" for informational purposes. Campanelli Analytics makes reasonable efforts to keep information accurate and up to date." },
-      { "heading": "Contact", "text": "For questions about these terms, contact [SUBSTITUIR_POR_EMAIL]." }
+      { "heading": "Contact", "text": "For questions about these terms, contact wallisoncampanelli.eng@gmail.com." }
     ]
   },
   "footer": {
