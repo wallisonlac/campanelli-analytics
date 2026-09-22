@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content/pt.json';
 
 const areasDeEntrega = [
   { title: 'Fundações de Plataformas de Dados', desafio: 'Equipas precisam de uma base confiável para recolher, organizar e governar dados vindos de múltiplas fontes operacionais.', escopo: 'Avaliar sistemas de origem, definir uma arquitetura-alvo prática, estabelecer padrões de ingestão, criar camadas de dados, implementar orquestração e documentar responsabilidades.', capacidades: 'Azure, Databricks, Microsoft Fabric, Snowflake, PySpark, SQL, modelagem de dados, orquestração e práticas de qualidade de dados.', resultados: 'Uma arquitetura de dados mais clara, padrões de ingestão repetíveis, maior confiabilidade e uma base que suporta analytics e automação futura.' },
@@ -10,7 +11,7 @@ const areasDeEntrega = [
 ];
 ---
 
-<BaseLayout title="Capacidades em Engenharia de Dados | Campanelli Analytics" description="Conheça áreas de entrega em plataformas de dados, ETL/ELT, lakehouse, analytics, automação e workflows de dados com IA." lang="pt">
+<BaseLayout content={content} title="Capacidades em Engenharia de Dados | Campanelli Analytics" description="Conheça áreas de entrega em plataformas de dados, ETL/ELT, lakehouse, analytics, automação e workflows de dados com IA." lang="pt">
   <main>
     <section class="page-hero"><div class="container"><p class="eyebrow">CAPACIDADES SELECIONADAS</p><h1>Entrega prática de Data Engineering para desafios operacionais complexos.</h1><p class="lead">Exemplos de áreas de entrega baseados em experiência prática em engenharia de dados, plataformas cloud, analytics e automação. O escopo específico, a arquitetura e os resultados mensuráveis são definidos em conjunto para cada projeto.</p></div></section>
     <section class="section"><div class="container"><div class="section-heading"><p class="eyebrow">COMO ENTREGAMOS</p><h2>Áreas de entrega</h2><p>O objetivo não é prescrever uma solução genérica. Cada projeto começa pelo contexto de negócio, pelas restrições técnicas e pelo resultado que a sua equipa precisa alcançar.</p></div><div class="service-grid">{areasDeEntrega.map((area) => (<article class="service-card"><h3>{area.title}</h3><p><strong>Área do desafio:</strong> {area.desafio}</p><p><strong>Escopo típico de entrega:</strong> {area.escopo}</p><p><strong>Capacidades selecionadas:</strong> {area.capacidades}</p><p><strong>Resultados típicos do projeto:</strong> {area.resultados}</p></article>))}</div></div></section>
