@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content/en.json';
 
 const deliveryAreas = [
   { title: 'Data Platform Foundations', challenge: 'Teams need a dependable foundation for collecting, organizing and governing data from multiple operational sources.', scope: 'Assess source systems, define a practical target architecture, establish ingestion patterns, create data layers, implement orchestration and document ownership.', capabilities: 'Azure, Databricks, Microsoft Fabric, Snowflake, PySpark, SQL, data modeling, orchestration and data quality practices.', outcomes: 'A clearer data architecture, repeatable ingestion patterns, better reliability and a foundation that supports analytics and future automation.' },
@@ -10,8 +11,8 @@ const deliveryAreas = [
 ];
 ---
 
-<BaseLayout title="Selected Data Engineering Capabilities | Campanelli Analytics" description="Explore delivery areas across data platforms, ETL/ELT, lakehouse, analytics, automation and AI-enabled workflows." lang="en">
-  <main>
+<BaseLayout content={content} title="Selected Data Engineering Capabilities | Campanelli Analytics" description="Explore delivery areas across data platforms, ETL/ELT, lakehouse, analytics, automation and AI-enabled workflows." lang="en">
+<main>
     <section class="page-hero"><div class="container"><p class="eyebrow">SELECTED CAPABILITIES</p><h1>Practical data engineering delivery for complex operational challenges.</h1><p class="lead">Examples of delivery areas based on hands-on experience across data engineering, cloud platforms, analytics and automation. Specific scope, architecture and measurable outcomes are defined collaboratively for each engagement.</p></div></section>
     <section class="section"><div class="container"><div class="section-heading"><p class="eyebrow">HOW WE DELIVER</p><h2>Delivery areas</h2><p>The goal is not to prescribe a generic solution. Each engagement begins with the business context, technical constraints and the outcome your team needs to achieve.</p></div><div class="service-grid">{deliveryAreas.map((area) => (<article class="service-card"><h3>{area.title}</h3><p><strong>Challenge area:</strong> {area.challenge}</p><p><strong>Typical delivery scope:</strong> {area.scope}</p><p><strong>Selected capabilities:</strong> {area.capabilities}</p><p><strong>Typical project outcomes:</strong> {area.outcomes}</p></article>))}</div></div></section>
     <section class="section section-alt"><div class="container narrow"><div class="section-heading"><p class="eyebrow">MEASURABLE IMPACT</p><h2>Results are documented when the evidence is available.</h2><p>Where client approval and verified data are available, engagements can be documented with relevant measures such as delivery time, manual steps removed, pipeline reliability, reporting availability, adoption and operational effort saved.</p></div></div></section>
