@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import CTABand from "../components/CTABand.astro";
+import Icon from "../components/Icon.astro";
+import { t, href, CALENDLY, WHATSAPP, type Lang } from "../i18n";
+export interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const c = t(lang);
+const p = c.publicSector;
+---
+<BaseLayout lang={lang} page="publicSector">
+  <PageHero eyebrow={p.hero.eyebrow} title={p.hero.title} subtitle={p.hero.subtitle}>
+    <div class="btn-row">
+      <a class="btn btn--primary btn--lg" href={CALENDLY} target="_blank" rel="noopener">{c.ui.bookCall}</a>
+      <a class="btn btn--ghost btn--lg" href={WHATSAPP} target="_blank" rel="noopener">{c.ui.whatsapp}</a>
+    </div>
+  </PageHero>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">{p.pains.eyebrow}</p>
+        <h2>{p.pains.title}</h2>
+      </div>
+      <ul class="xlist">{p.pains.items.map((i) => <li>{i}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{p.solutions.eyebrow}</p>
+        <h2>{p.solutions.title}</h2>
+      </div>
+      <div class="grid grid--3">
+        {p.solutions.items.map((s, i) => (
+          <div class={`solution ${i === 0 ? "solution--highlight" : ""}`}>
+            <h3>{s.title}</h3>
+            <p>{s.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">{p.results.eyebrow}</p>
+        <h2>{p.results.title}</h2>
+        <ul class="checklist checklist--lg">{p.results.items.map((r) => <li>{r}</li>)}</ul>
+      </div>
+      <aside class="proof">
+        <span class="proof__icon"><Icon name="gov" size={32} /></span>
+        <h3>{p.experience.title}</h3>
+        <p>{p.experience.text}</p>
+        <a class="link-arrow" href={href("cases", lang)}>{c.ui.seeCases} →</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{p.howToHire.eyebrow}</p>
+        <h2>{p.howToHire.title}</h2>
+      </div>
+      <ol class="steps steps--dark">
+        {p.howToHire.steps.map((s, i) => (
+          <li class="step"><span class="step__n">{String(i + 1).padStart(2, "0")}</span><h3>{s.title}</h3><p>{s.text}</p></li>
+        ))}
+      </ol>
+      <ul class="badges">{p.compliance.map((b) => <li><Icon name="check" size={18} /> {b}</li>)}</ul>
+    </div>
+  </section>
+
+  <CTABand lang={lang} title={p.finalCta.title} text={p.finalCta.text} />
+</BaseLayout>

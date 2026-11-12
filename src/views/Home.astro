@@ -1,0 +1,162 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroVisual from "../components/HeroVisual.astro";
+import CaseCard from "../components/CaseCard.astro";
+import CTABand from "../components/CTABand.astro";
+import Icon from "../components/Icon.astro";
+import { t, href, CALENDLY, WHATSAPP, type Lang, type PageKey } from "../i18n";
+
+export interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const c = t(lang);
+const h = c.home;
+const serviceIcons = ["automation", "data", "bi", "cloud", "ai"];
+const painIcons = ["sheet", "link", "clock", "cost"];
+const audienceIcons = ["gov", "building", "handshake"];
+const featured = c.cases.items.filter((i: any) => i.featured);
+---
+<BaseLayout lang={lang} page="home">
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">{h.hero.eyebrow}</p>
+        <h1>{h.hero.title}</h1>
+        <p class="lead">{h.hero.subtitle}</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href={CALENDLY} target="_blank" rel="noopener">{c.ui.bookCall}</a>
+          <a class="btn btn--ghost btn--lg" href={WHATSAPP} target="_blank" rel="noopener">{c.ui.whatsapp}</a>
+        </div>
+      </div>
+      <HeroVisual lang={lang} />
+    </div>
+    <div class="container trust">
+      <span class="trust__label">{h.hero.trustLabel}</span>
+      <ul class="trust__list">{h.hero.trust.map((s) => <li>{s}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Highlights">
+    <div class="container stats__grid">
+      {h.stats.map((s) => (
+        <div class="stat"><strong>{s.value}</strong><span>{s.label}</span></div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{h.pains.eyebrow}</p>
+        <h2>{h.pains.title}</h2>
+      </div>
+      <div class="grid grid--4">
+        {h.pains.items.map((p, i) => (
+          <div class="pain">
+            <span class="pain__icon"><Icon name={painIcons[i]} size={24} /></span>
+            <h3>{p.title}</h3>
+            <p>{p.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{h.services.eyebrow}</p>
+        <h2>{h.services.title}</h2>
+        <p>{h.services.intro}</p>
+      </div>
+      <div class="grid grid--services">
+        {c.services.items.map((s, i) => (
+          <a class="service-tile" href={`${href("services", lang)}#${s.id}`}>
+            <span class="service-tile__icon"><Icon name={serviceIcons[i]} /></span>
+            <h3>{s.title}</h3>
+            <p>{s.summary}</p>
+            <span class="service-tile__more">{c.ui.learnMore} →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{h.audiences.eyebrow}</p>
+        <h2>{h.audiences.title}</h2>
+      </div>
+      <div class="grid grid--3">
+        {h.audiences.items.map((a, i) => (
+          <a class="audience" href={href(a.page as PageKey, lang)}>
+            <span class="audience__icon"><Icon name={audienceIcons[i]} /></span>
+            <h3>{a.title}</h3>
+            <p>{a.text}</p>
+            <span class="service-tile__more">{c.ui.learnMore} →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="eyebrow">{h.casesPreview.eyebrow}</p>
+          <h2>{h.casesPreview.title}</h2>
+          <p>{h.casesPreview.intro}</p>
+        </div>
+        <a class="btn btn--ghost" href={href("cases", lang)}>{c.ui.seeCases} →</a>
+      </div>
+      <div class="grid grid--3">
+        {featured.map((item) => <CaseCard lang={lang} item={item} compact />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{h.process.eyebrow}</p>
+        <h2>{h.process.title}</h2>
+      </div>
+      <ol class="steps">
+        {h.process.steps.map((s, i) => (
+          <li class="step"><span class="step__n">{String(i + 1).padStart(2, "0")}</span><h3>{s.title}</h3><p>{s.text}</p></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container founder">
+      <picture class="founder__photo">
+        <source srcset="/wallison.webp" type="image/webp" />
+        <img src="/wallison.webp" alt={`${h.founder.name}, ${h.founder.role}`} width="480" height="560" loading="lazy" />
+      </picture>
+      <div>
+        <p class="eyebrow">{h.founder.eyebrow}</p>
+        <h2>{h.founder.name}</h2>
+        <p class="founder__role">{h.founder.role}</p>
+        <p>{h.founder.bio}</p>
+        <a class="link-arrow" href={href("about", lang)}>{h.founder.link} →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{h.models.eyebrow}</p>
+        <h2>{h.models.title}</h2>
+      </div>
+      <div class="grid grid--4">
+        {h.models.items.map((m) => <div class="model"><h3>{m.title}</h3><p>{m.text}</p></div>)}
+      </div>
+    </div>
+  </section>
+
+  <CTABand lang={lang} title={h.finalCta.title} text={h.finalCta.text} />
+</BaseLayout>

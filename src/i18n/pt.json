@@ -1,0 +1,342 @@
+{
+  "lang": "pt",
+  "htmlLang": "pt-BR",
+  "ogLocale": "pt_BR",
+  "meta": {
+    "home": { "title": "Campanelli Analytics | Automação, Engenharia de Dados e BI", "description": "Automatizamos processos, integramos sistemas e construímos bancos de dados e painéis que reduzem custo operacional. Empresas e governos no Brasil e na Europa." },
+    "services": { "title": "Serviços | Automação de processos, dados e BI | Campanelli Analytics", "description": "Automação de processos, bancos de dados e engenharia de dados, BI e painéis de gestão, plataformas em nuvem (Microsoft Fabric, Azure) e IA aplicada." },
+    "publicSector": { "title": "Prefeituras e Setor Público | Campanelli Analytics", "description": "Automação e dados para prefeituras: arrecadação, hora extra, prestação de contas, saúde e painel do gabinete. Fazer mais com a mesma equipe, dentro da Lei 14.133." },
+    "cases": { "title": "Cases | Projetos em governo, saúde, energia e indústria | Campanelli Analytics", "description": "Projetos de dados, automação e BI entregues para governo, saúde pública, energia, óleo & gás, saneamento, semicondutores e indústria no Brasil e na Europa." },
+    "about": { "title": "Sobre | Campanelli Analytics", "description": "Empresa brasileira de engenharia de dados, automação e BI, com sede em Minas Gerais e operação em Lisboa. Conheça a empresa e o fundador." },
+    "contact": { "title": "Contato | Agende um diagnóstico gratuito | Campanelli Analytics", "description": "Conte o seu desafio de dados ou automação. Agende uma conversa de 30 minutos ou fale pelo WhatsApp." },
+    "privacy": { "title": "Política de Privacidade | Campanelli Analytics", "description": "Como a Campanelli Analytics trata os dados enviados por este site." },
+    "terms": { "title": "Termos de Uso | Campanelli Analytics", "description": "Termos de uso do site da Campanelli Analytics." },
+    "thanks": { "title": "Mensagem recebida | Campanelli Analytics", "description": "Obrigado pelo contato." }
+  },
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "publicSector": "Setor Público",
+    "cases": "Cases",
+    "about": "Sobre",
+    "contact": "Contato",
+    "cta": "Agendar conversa"
+  },
+  "ui": {
+    "skip": "Pular para o conteúdo",
+    "menu": "Menu",
+    "bookCall": "Agendar diagnóstico gratuito",
+    "whatsapp": "Falar no WhatsApp",
+    "seeCases": "Ver cases",
+    "seeServices": "Ver todos os serviços",
+    "learnMore": "Saiba mais",
+    "stack": "Tecnologias",
+    "outcome": "Resultado",
+    "challenge": "Desafio",
+    "delivered": "O que entregamos",
+    "ongoing": "Em andamento",
+    "langLabel": "Idioma"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Engenharia de dados · Automação · BI",
+      "title": "Menos trabalho manual. Mais decisões com dados.",
+      "subtitle": "Automatizamos processos, integramos sistemas e construímos bancos de dados e painéis que reduzem o custo operacional, para empresas e governos no Brasil e na Europa.",
+      "trustLabel": "Experiência em projetos para",
+      "trust": ["Governo", "Saúde pública", "Energia", "Óleo & gás", "Saneamento", "Semicondutores", "Automotivo", "Indústria"]
+    },
+    "stats": [
+      { "value": "9", "label": "setores atendidos" },
+      { "value": "4+", "label": "países com projetos entregues" },
+      { "value": "2 continentes", "label": "Brasil e Europa" },
+      { "value": "PT · EN · ES", "label": "atendimento em três idiomas" }
+    ],
+    "pains": {
+      "eyebrow": "Onde a gente entra",
+      "title": "Se a sua operação vive assim, dá para automatizar.",
+      "items": [
+        { "title": "Planilhas e retrabalho", "text": "Equipes gastando horas copiando dados entre planilhas, e-mails e sistemas." },
+        { "title": "Sistemas que não conversam", "text": "Cada área com a sua base, e nenhum número bate na reunião." },
+        { "title": "Relatórios que levam dias", "text": "Fechamento, indicadores e prestação de contas montados à mão todo mês." },
+        { "title": "Custo de pessoal subindo", "text": "Hora extra e novas contratações só para dar conta do operacional." }
+      ]
+    },
+    "services": {
+      "eyebrow": "O que fazemos",
+      "title": "Do processo manual ao painel de decisão.",
+      "intro": "Cinco frentes que se combinam conforme o problema, sempre com resultado mensurável."
+    },
+    "audiences": {
+      "eyebrow": "Para quem",
+      "title": "Atendemos três perfis de cliente.",
+      "items": [
+        { "title": "Prefeituras e órgãos públicos", "text": "Automação e dados para fazer mais com a mesma equipe: arrecadação, folha, prestação de contas, saúde e gabinete.", "page": "publicSector" },
+        { "title": "Empresas no Brasil e na Europa", "text": "Indústria, energia, saúde, serviços. Menos custo operacional, dados confiáveis e plataformas que escalam.", "page": "services" },
+        { "title": "Consultorias e integradores", "text": "Capacidade sênior sob demanda em Microsoft Fabric, Azure, Power BI e engenharia de dados, por projeto ou subcontratação.", "page": "contact" }
+      ]
+    },
+    "casesPreview": {
+      "eyebrow": "Prova de entrega",
+      "title": "Projetos em ambientes onde erro custa caro.",
+      "intro": "Governo, saúde pública, energia e indústria pesada. Por confidencialidade, não citamos nomes de clientes."
+    },
+    "process": {
+      "eyebrow": "Como trabalhamos",
+      "title": "Começa pequeno, prova valor, depois escala.",
+      "steps": [
+        { "title": "Diagnóstico", "text": "Conversa gratuita de 30 minutos e mapeamento dos processos que mais consomem tempo e dinheiro." },
+        { "title": "Piloto", "text": "Uma frente de alto retorno, entregue em semanas, com resultado medido antes de ampliar." },
+        { "title": "Escala", "text": "Expansão para outras áreas, reaproveitando a base de dados e os modelos já construídos." },
+        { "title": "Sustentação", "text": "Suporte, evolução contínua e transferência de conhecimento para a sua equipe." }
+      ]
+    },
+    "models": {
+      "eyebrow": "Modelos de contratação",
+      "title": "Flexível para o seu orçamento.",
+      "items": [
+        { "title": "Projeto fechado", "text": "Escopo, prazo e preço definidos." },
+        { "title": "Banco de horas", "text": "Contratação por hora, para demandas contínuas." },
+        { "title": "Profissional dedicado", "text": "Especialista sênior alocado no seu time." },
+        { "title": "Subcontratação", "text": "Para consultorias e integradores." }
+      ]
+    },
+    "founder": {
+      "eyebrow": "Liderança técnica",
+      "name": "Wallison Campanelli",
+      "role": "Fundador & Diretor Técnico",
+      "bio": "Engenheiro de dados sênior, com projetos entregues para governo, saúde pública, energia, óleo & gás, saneamento e indústria no Brasil e na Europa. Especialista em Microsoft Fabric, Azure, Power BI, SQL e PySpark. Tem formação em Engenharia de Minas e Física e é doutorando em Física pela Universidade de Lisboa: rigor analítico aplicado a problemas de negócio.",
+      "link": "Conheça a empresa"
+    },
+    "finalCta": {
+      "title": "Quanto tempo a sua equipe perde com trabalho manual?",
+      "text": "Em 30 minutos mapeamos as oportunidades e estimamos o ganho. Sem custo e sem compromisso."
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Serviços",
+      "title": "Automação, dados e BI com resultado mensurável.",
+      "subtitle": "Cada projeto começa por uma pergunta simples: quanto tempo e dinheiro este processo custa hoje? A partir daí, escolhemos a solução mais enxuta que resolve."
+    },
+    "items": [
+      {
+        "id": "automacao",
+        "title": "Automação de processos",
+        "summary": "Rotinas manuais viram fluxos automáticos: extração, conferência, conciliação, relatórios e alertas.",
+        "bullets": ["Automação de rotinas, relatórios e fechamentos", "Integração entre sistemas, APIs e planilhas", "Conciliação e validação automática de dados", "Alertas e notificações por e-mail ou Teams", "Power Automate, Python, SQL, VBA"],
+        "outcome": "Menos horas operacionais, menos erro humano e equipe livre para o que importa."
+      },
+      {
+        "id": "dados",
+        "title": "Bancos de dados e engenharia de dados",
+        "summary": "Uma base única e confiável, alimentada automaticamente a partir de todos os seus sistemas.",
+        "bullets": ["Modelagem e criação de bancos de dados", "Pipelines ETL/ELT e integração de fontes", "Migração de legados (Excel, Access, SSIS)", "Qualidade, documentação e governança de dados", "SQL Server, Oracle, PostgreSQL"],
+        "outcome": "Um número só para cada indicador, sem planilha paralela."
+      },
+      {
+        "id": "bi",
+        "title": "BI e painéis de gestão",
+        "summary": "Painéis executivos e operacionais que se atualizam sozinhos e respondem às perguntas da gestão.",
+        "bullets": ["Power BI, DAX e modelagem em estrela", "Definição de KPIs e metas", "Painéis executivos e operacionais", "Migração de relatórios em Excel para Power BI", "Modelos de custeio e rateio"],
+        "outcome": "Decisões em minutos, não em dias de fechamento."
+      },
+      {
+        "id": "cloud",
+        "title": "Plataformas de dados em nuvem",
+        "summary": "Arquitetura moderna para empresas que precisam escalar dados com segurança e governança.",
+        "bullets": ["Microsoft Fabric e Azure", "Databricks, Snowflake, Spark / PySpark", "Arquitetura lakehouse e data warehouse", "Orquestração, monitoramento e custos", "Migração on-premises para nuvem"],
+        "outcome": "Uma plataforma que cresce com a operação, sem retrabalho a cada nova área."
+      },
+      {
+        "id": "ia",
+        "title": "IA aplicada",
+        "summary": "Inteligência artificial onde ela gera retorno concreto, em cima de dados confiáveis.",
+        "bullets": ["Classificação e extração de documentos", "Previsão de demanda, receita e custos", "Detecção de anomalias e fraudes", "Assistentes de IA integrados aos seus dados", "Python, Azure AI, modelos de linguagem"],
+        "outcome": "Tarefas repetitivas de análise feitas em escala, com revisão humana onde precisa."
+      }
+    ],
+    "partners": {
+      "eyebrow": "Para consultorias e integradores",
+      "title": "Capacidade sênior quando o seu time precisa.",
+      "text": "Atuamos como parceiro de entrega para consultorias no Brasil e na Europa: subcontratação, especialistas dedicados ou squads remotos em Microsoft Fabric, Azure, Power BI e engenharia de dados. Também apoiamos empresas estrangeiras com projetos e clientes no Brasil."
+    }
+  },
+  "publicSector": {
+    "hero": {
+      "eyebrow": "Prefeituras e órgãos públicos",
+      "title": "Sua prefeitura fazendo mais com a mesma equipe.",
+      "subtitle": "Orçamento apertado e limite de gasto com pessoal não precisam travar a gestão. Automatizamos o trabalho repetitivo e damos ao gestor os números para decidir, sem aumentar a folha."
+    },
+    "pains": {
+      "eyebrow": "O cenário que encontramos",
+      "title": "Problemas comuns em quase todo município.",
+      "items": [
+        "Despesa com pessoal perto do limite da Lei de Responsabilidade Fiscal",
+        "Horas extras e contratos temporários para dar conta do operacional",
+        "Processos em papel, planilha e e-mail",
+        "Prestação de contas ao Tribunal de Contas montada à mão",
+        "Dados de saúde, educação e arrecadação em sistemas que não conversam",
+        "Gestor sem visão rápida das metas de cada secretaria"
+      ]
+    },
+    "solutions": {
+      "eyebrow": "O que entregamos",
+      "title": "Frentes de automação e dados para a gestão municipal.",
+      "items": [
+        { "title": "Arrecadação e dívida ativa", "text": "Cruzamento de cadastros (IPTU, ISS, alvarás), régua de cobrança e painel de inadimplência. É a frente que costuma se pagar com receita nova." },
+        { "title": "Folha, frequência e hora extra", "text": "Controle automático de horas extras por secretaria, com alertas de limite de despesa com pessoal." },
+        { "title": "Prestação de contas e transparência", "text": "Relatórios para o Tribunal de Contas, RREO/RGF e portal da transparência gerados automaticamente." },
+        { "title": "Saúde", "text": "Painéis da atenção primária, filas e indicadores que impactam repasses federais." },
+        { "title": "Educação", "text": "Matrículas, frequência escolar, transporte e merenda em um só painel." },
+        { "title": "Painel do gabinete", "text": "As metas de todas as secretarias em uma tela, atualizada automaticamente." }
+      ]
+    },
+    "results": {
+      "eyebrow": "O que muda",
+      "title": "Resultado para a gestão e para o cidadão.",
+      "items": ["Menos horas extras e retrabalho", "Mais arrecadação própria", "Menos risco de apontamentos no Tribunal de Contas", "Servidores focados no atendimento, não na planilha", "Decisões baseadas em dados"]
+    },
+    "experience": {
+      "title": "Experiência em governo e saúde pública",
+      "text": "Nossa liderança técnica já entregou projetos para um ministério de governo europeu, um serviço nacional de saúde e uma rede de instituições de saúde e assistência social, ambientes com alto nível de exigência em segurança, auditoria e confiabilidade."
+    },
+    "howToHire": {
+      "eyebrow": "Como contratar",
+      "title": "Um caminho simples e dentro da lei.",
+      "steps": [
+        { "title": "Diagnóstico sem custo", "text": "Mapeamos os processos de uma ou mais secretarias e estimamos as horas e os reais economizados." },
+        { "title": "Piloto por contratação direta", "text": "Uma frente de alto retorno, dentro dos limites de dispensa da Lei 14.133/2021." },
+        { "title": "Expansão", "text": "Licitação ou adesão a ata de registro de preços para as demais secretarias." },
+        { "title": "Sustentação", "text": "Suporte mensal, evolução dos painéis e capacitação dos servidores." }
+      ]
+    },
+    "compliance": ["Empresa brasileira com CNPJ ativo", "Adequação à LGPD", "Transferência de conhecimento para os servidores", "Soluções compatíveis com os sistemas que o município já usa"],
+    "finalCta": {
+      "title": "Vamos mapear onde a sua prefeitura pode economizar?",
+      "text": "Diagnóstico gratuito, com estimativa de economia por secretaria."
+    }
+  },
+  "cases": {
+    "hero": {
+      "eyebrow": "Cases",
+      "title": "Projetos entregues em ambientes de alta exigência.",
+      "subtitle": "Projetos entregues pela nossa liderança técnica, diretamente ou em parceria com consultorias. Por confidencialidade, não citamos nomes de clientes; mais detalhes podem ser apresentados em reunião, conforme os acordos de confidencialidade."
+    },
+    "items": [
+      { "sector": "Governo", "region": "Portugal", "title": "Dados e reporting para um ministério de governo europeu", "challenge": "Informação dispersa entre sistemas e relatórios de gestão montados manualmente.", "delivered": "Engenharia de dados e analytics para consolidar fontes e entregar reporting confiável à gestão.", "stack": ["SQL", "Engenharia de dados", "Power BI"], "featured": true },
+      { "sector": "Saúde pública", "region": "Portugal", "title": "Analytics de prescrição médica para um serviço nacional de saúde", "challenge": "Modelo analítico complexo, difícil de manter e lento para responder às perguntas da gestão.", "delivered": "Refatoração do modelo para esquema em estrela sobre Oracle, com painéis em Power BI.", "stack": ["Oracle", "Power BI", "DAX", "Modelagem dimensional"], "featured": true },
+      { "sector": "Saúde e assistência social", "region": "Portugal", "title": "Dados para uma rede de instituições de saúde e assistência social", "challenge": "Unidades com informação descentralizada e pouca visão consolidada.", "delivered": "Consolidação de dados e painéis de gestão para acompanhamento da rede.", "stack": ["Engenharia de dados", "Power BI"] },
+      { "sector": "Energia", "region": "Portugal", "title": "Modelos de custeio migrados do Excel para Power BI em um grupo europeu de energia", "challenge": "Modelos de custeio críticos dependentes de planilhas extensas e processos manuais.", "delivered": "Migração dos modelos para Power BI e projetos de plataforma em Microsoft Fabric.", "stack": ["Power BI", "DAX", "Microsoft Fabric"], "featured": true },
+      { "sector": "Óleo & gás", "region": "Suíça", "title": "Plataforma de dados para grupos de óleo & gás offshore", "challenge": "Dados operacionais em ETLs legados e fontes desconectadas.", "delivered": "Plataforma de dados em Microsoft Fabric/Azure, com pipelines em PySpark e modernização de SSIS.", "stack": ["Microsoft Fabric", "Azure", "PySpark", "SSIS"] },
+      { "sector": "Saneamento", "region": "Reino Unido", "title": "Plataforma de dados para uma empresa de água e saneamento", "challenge": "Necessidade de consolidar dados operacionais e comerciais em uma plataforma moderna.", "delivered": "Plataforma de dados em Microsoft Fabric/Azure, com pipelines e camada analítica.", "stack": ["Microsoft Fabric", "Azure", "PySpark"] },
+      { "sector": "Semicondutores", "region": "Internacional", "title": "Engenharia de dados para um fabricante global de semicondutores", "challenge": "Grande volume de dados de produção e de negócio a integrar.", "delivered": "Pipelines e modelos de dados para analytics.", "stack": ["Engenharia de dados", "SQL", "Python"] },
+      { "sector": "Automotivo", "region": "Portugal", "title": "Dados para um grupo multinacional do setor automotivo", "challenge": "Operação distribuída em vários países e negócios.", "delivered": "Engenharia de dados e analytics para a operação do grupo.", "stack": ["Engenharia de dados", "Power BI"], "ongoing": true },
+      { "sector": "Indústria", "region": "Brasil", "title": "Analytics para uma multinacional industrial", "challenge": "Relatórios operacionais e comerciais dependentes de trabalho manual.", "delivered": "Automação de relatórios e painéis de indicadores.", "stack": ["Power BI", "VBA", "SQL"] }
+    ],
+    "finalCta": {
+      "title": "Quer um resultado parecido na sua operação?",
+      "text": "Conte o desafio e mostramos como resolveríamos, com uma estimativa de ganho."
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Sobre",
+      "title": "Padrão de grande projeto, atendimento de empresa enxuta.",
+      "subtitle": "A Campanelli Analytics LTDA é uma empresa brasileira de engenharia de dados, automação e BI, com sede em Muzambinho (MG) e operação em Lisboa (Portugal)."
+    },
+    "story": [
+      "Nascemos da experiência do fundador em projetos de dados para governo, saúde pública e grandes empresas na Europa, onde confiabilidade, segurança e auditoria não são opcionais.",
+      "Levamos esse padrão para empresas e prefeituras no Brasil e para clientes no exterior, com uma estrutura enxuta: quem desenha a solução é quem implementa."
+    ],
+    "values": {
+      "title": "Como trabalhamos",
+      "items": [
+        { "title": "Resultado mensurável", "text": "Todo projeto começa com uma meta clara de horas, custo ou receita." },
+        { "title": "Entrega sênior", "text": "Sem camadas: quem desenha a solução é quem implementa." },
+        { "title": "Confidencialidade", "text": "Dados de clientes e projetos tratados com sigilo e conforme LGPD/GDPR." },
+        { "title": "Autonomia do cliente", "text": "Documentação e transferência de conhecimento para o seu time." }
+      ]
+    },
+    "founder": {
+      "title": "Fundador e Diretor Técnico",
+      "bio": [
+        "Wallison Campanelli é engenheiro de dados sênior, com projetos entregues para governo, saúde pública, energia, óleo & gás, saneamento, semicondutores, automotivo e indústria no Brasil, em Portugal, na Suíça e no Reino Unido.",
+        "Atua em todo o ciclo de dados: automação de processos, bancos de dados, pipelines ETL/ELT, plataformas em Microsoft Fabric e Azure, Databricks, Snowflake, PySpark, SQL e Power BI.",
+        "Tem formação em Engenharia de Minas e Física e é doutorando em Física pela Universidade de Lisboa. Dessa base vêm o rigor analítico e a visão sistêmica que aplica aos problemas de negócio.",
+        "Fala português, inglês e espanhol."
+      ]
+    },
+    "company": {
+      "title": "Dados da empresa",
+      "rows": [
+        { "label": "Razão social", "value": "Campanelli Analytics LTDA" },
+        { "label": "CNPJ", "value": "62.856.593/0001-40" },
+        { "label": "Sede", "value": "Muzambinho, MG, Brasil" },
+        { "label": "Operação", "value": "Brasil e Portugal, com projetos em toda a Europa" },
+        { "label": "Idiomas", "value": "Português, inglês e espanhol" }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contato",
+      "title": "Vamos conversar sobre o seu desafio.",
+      "subtitle": "Escolha o canal mais prático. Retornamos em até 2 dias úteis com uma proposta de próximo passo."
+    },
+    "channels": {
+      "call": { "title": "Agendar conversa de 30 min", "text": "Diagnóstico gratuito por videochamada." },
+      "whatsapp": { "title": "WhatsApp", "text": "Resposta rápida para dúvidas e agendamentos." },
+      "email": { "title": "E-mail", "text": "Para propostas e documentos." }
+    },
+    "form": {
+      "title": "Ou envie uma mensagem",
+      "name": "Nome",
+      "email": "E-mail",
+      "phone": "Telefone / WhatsApp",
+      "organization": "Empresa ou órgão",
+      "location": "Cidade / país",
+      "interest": "Assunto",
+      "message": "Conte o desafio",
+      "messagePlaceholder": "Ex.: nossa equipe gasta 3 dias por mês montando o relatório X a partir de 4 planilhas...",
+      "consent": "Concordo em ser contatado(a) sobre esta solicitação, conforme a Política de Privacidade.",
+      "submit": "Enviar mensagem",
+      "subject": "Novo contato pelo site (PT)",
+      "interestOptions": ["Automação de processos", "Banco de dados / engenharia de dados", "BI e painéis de gestão", "Plataforma em nuvem (Fabric / Azure)", "IA aplicada", "Prefeitura / setor público", "Parceria ou subcontratação", "Outro"]
+    }
+  },
+  "thanks": {
+    "title": "Mensagem recebida!",
+    "text": "Obrigado pelo contato. Retornamos em até 2 dias úteis. Se preferir adiantar, agende já uma conversa de 30 minutos.",
+    "back": "Voltar ao início"
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "sections": [
+      { "heading": "Visão geral", "text": "Esta política explica como a Campanelli Analytics LTDA (CNPJ 62.856.593/0001-40) trata as informações enviadas voluntariamente por este site, em conformidade com a LGPD (Lei 13.709/2018) e, quando aplicável, com o RGPD/GDPR europeu." },
+      { "heading": "O que coletamos", "text": "Nome, e-mail, telefone, organização, localização e a mensagem enviada pelo formulário de contato, exclusivamente para responder à sua solicitação." },
+      { "heading": "Como os dados são enviados", "text": "O formulário é processado pelo serviço FormSubmit, que encaminha a mensagem ao nosso e-mail. Não armazenamos os dados em bancos próprios do site e não os vendemos nem compartilhamos para fins de marketing." },
+      { "heading": "Seus direitos", "text": "Você pode solicitar acesso, correção ou exclusão dos seus dados a qualquer momento." },
+      { "heading": "Contato sobre privacidade", "text": "wallisoncampanelli.eng@gmail.com" }
+    ]
+  },
+  "terms": {
+    "title": "Termos de Uso",
+    "sections": [
+      { "heading": "Aceitação", "text": "Ao acessar este site, você concorda com estes termos de uso." },
+      { "heading": "Finalidade do site", "text": "Este site apresenta informações institucionais e comerciais sobre a Campanelli Analytics LTDA. Não constitui oferta comercial vinculante; condições de contratação são definidas em proposta e contrato específicos." },
+      { "heading": "Cases e experiência", "text": "Os projetos descritos foram entregues pela liderança técnica da empresa, diretamente ou em parceria com consultorias. Os nomes de clientes são omitidos por confidencialidade." },
+      { "heading": "Sem garantias", "text": "O conteúdo é fornecido para fins informativos. Fazemos esforços razoáveis para mantê-lo correto e atualizado." },
+      { "heading": "Contato", "text": "wallisoncampanelli.eng@gmail.com" }
+    ]
+  },
+  "footer": {
+    "tagline": "Automação, engenharia de dados e BI para empresas e governos.",
+    "company": "Campanelli Analytics LTDA",
+    "cnpj": "CNPJ 62.856.593/0001-40",
+    "address": "Muzambinho, MG, Brasil · Lisboa, Portugal",
+    "navTitle": "Navegação",
+    "contactTitle": "Contato",
+    "privacy": "Privacidade",
+    "terms": "Termos"
+  }
+}

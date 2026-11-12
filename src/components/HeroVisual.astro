@@ -1,0 +1,59 @@
+---
+// Illustration of the offer: scattered sources -> automated pipeline -> one dashboard.
+import type { Lang } from "../i18n";
+export interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const L = lang === "pt"
+  ? { a: "Planilhas", b: "Sistemas", c: "E-mails", d: "Painel de gestão", e: "Automático" }
+  : { a: "Spreadsheets", b: "Systems", c: "Emails", d: "Management dashboard", e: "Automated" };
+---
+<div class="hero-visual" aria-hidden="true">
+  <svg viewBox="0 0 460 360" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="hv-line" x1="0" x2="1">
+        <stop offset="0" stop-color="#19C3C3" stop-opacity=".25" />
+        <stop offset="1" stop-color="#19C3C3" stop-opacity="1" />
+      </linearGradient>
+    </defs>
+    <!-- sources -->
+    <g font-family="Inter Variable, Inter, sans-serif" font-size="13" font-weight="600" fill="#DCE6F2">
+      <rect x="4" y="44" width="128" height="40" rx="10" fill="#132A4D" stroke="#2A4672" />
+      <text x="24" y="69">{L.a}</text>
+      <rect x="4" y="160" width="128" height="40" rx="10" fill="#132A4D" stroke="#2A4672" />
+      <text x="24" y="185">{L.b}</text>
+      <rect x="4" y="276" width="128" height="40" rx="10" fill="#132A4D" stroke="#2A4672" />
+      <text x="24" y="301">{L.c}</text>
+    </g>
+    <!-- flows -->
+    <g fill="none" stroke="url(#hv-line)" stroke-width="2.5" stroke-linecap="round">
+      <path class="flow" d="M132 64 C 180 64, 180 180, 214 180" />
+      <path class="flow" d="M132 180 L 214 180" />
+      <path class="flow" d="M132 296 C 180 296, 180 180, 214 180" />
+      <path class="flow" d="M246 180 L 270 180" />
+    </g>
+    <!-- hub -->
+    <circle cx="230" cy="180" r="16" fill="#0B1D3A" stroke="#19C3C3" stroke-width="2.5" />
+    <circle cx="230" cy="180" r="5" fill="#19C3C3" />
+    <text x="226" y="216" text-anchor="middle" font-family="Inter Variable, Inter, sans-serif" font-size="10" font-weight="700" letter-spacing=".6" fill="#19C3C3">{L.e.toUpperCase()}</text>
+    <!-- dashboard -->
+    <g>
+      <rect x="270" y="70" width="186" height="220" rx="14" fill="#FFFFFF" />
+      <text x="288" y="98" font-family="Manrope Variable, Manrope, sans-serif" font-size="12.5" font-weight="800" fill="#0B1D3A">{L.d}</text>
+      <rect x="288" y="112" width="70" height="38" rx="8" fill="#E8F7F7" />
+      <rect x="368" y="112" width="70" height="38" rx="8" fill="#EEF2F8" />
+      <rect x="296" y="122" width="34" height="6" rx="3" fill="#007C82" />
+      <rect x="296" y="134" width="22" height="6" rx="3" fill="#9FD9DB" />
+      <rect x="376" y="122" width="40" height="6" rx="3" fill="#0B1D3A" />
+      <rect x="376" y="134" width="26" height="6" rx="3" fill="#B8C4D6" />
+      <g fill="#007C82">
+        <rect class="bar" x="298" y="226" width="18" height="44" rx="4" />
+        <rect class="bar" x="324" y="206" width="18" height="64" rx="4" />
+        <rect class="bar" x="350" y="214" width="18" height="56" rx="4" />
+        <rect class="bar" x="376" y="190" width="18" height="80" rx="4" />
+        <rect class="bar" x="402" y="172" width="18" height="98" rx="4" fill="#19C3C3" />
+      </g>
+      <path d="M298 196 L 330 186 L 356 190 L 384 168 L 418 152" fill="none" stroke="#0B1D3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="418" cy="152" r="4" fill="#0B1D3A" />
+    </g>
+  </svg>
+</div>

@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { t, type Lang } from "../i18n";
+export interface Props { lang: Lang; kind: "privacy" | "terms"; }
+const { lang, kind } = Astro.props;
+const doc = t(lang)[kind];
+---
+<BaseLayout lang={lang} page={kind}>
+  <section class="section">
+    <div class="container narrow prose">
+      <h1>{doc.title}</h1>
+      {doc.sections.map((s) => (<><h2>{s.heading}</h2><p>{s.text}</p></>))}
+    </div>
+  </section>
+</BaseLayout>

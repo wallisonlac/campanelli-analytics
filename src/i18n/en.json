@@ -1,0 +1,342 @@
+{
+  "lang": "en",
+  "htmlLang": "en",
+  "ogLocale": "en_GB",
+  "meta": {
+    "home": { "title": "Campanelli Analytics | Process Automation, Data Engineering & BI", "description": "We automate processes, integrate systems and build databases and dashboards that cut operating cost, for companies and public bodies in Europe and Brazil." },
+    "services": { "title": "Services | Automation, Data Engineering & BI | Campanelli Analytics", "description": "Process automation, databases and data engineering, BI dashboards, cloud data platforms (Microsoft Fabric, Azure) and applied AI." },
+    "publicSector": { "title": "Public Sector | Campanelli Analytics", "description": "Data and automation for ministries, health services and municipalities: automated reporting, modern data platforms and performance dashboards without growing headcount." },
+    "cases": { "title": "Case Studies | Government, Health, Energy & Industry | Campanelli Analytics", "description": "Data, automation and BI projects delivered for government, public health, energy, oil & gas, water utilities, semiconductors and industry across Europe and Brazil." },
+    "about": { "title": "About | Campanelli Analytics", "description": "A Brazilian data engineering, automation and BI company operating from Minas Gerais and Lisbon. Meet the company and its founder." },
+    "contact": { "title": "Contact | Book a free discovery call | Campanelli Analytics", "description": "Tell us about your data or automation challenge. Book a 30-minute call or message us on WhatsApp." },
+    "privacy": { "title": "Privacy Policy | Campanelli Analytics", "description": "How Campanelli Analytics handles data submitted through this website." },
+    "terms": { "title": "Terms of Use | Campanelli Analytics", "description": "Terms of use for the Campanelli Analytics website." },
+    "thanks": { "title": "Message received | Campanelli Analytics", "description": "Thank you for getting in touch." }
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "publicSector": "Public Sector",
+    "cases": "Case Studies",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Book a call"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "bookCall": "Book a free discovery call",
+    "whatsapp": "Message on WhatsApp",
+    "seeCases": "See case studies",
+    "seeServices": "See all services",
+    "learnMore": "Learn more",
+    "stack": "Stack",
+    "outcome": "Outcome",
+    "challenge": "Challenge",
+    "delivered": "What we delivered",
+    "ongoing": "Ongoing",
+    "langLabel": "Language"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Data engineering · Automation · BI",
+      "title": "Less manual work. Better decisions with data.",
+      "subtitle": "We automate processes, integrate systems and build databases and dashboards that cut operating cost, for companies and public bodies across Europe and Brazil.",
+      "trustLabel": "Experience delivering for",
+      "trust": ["Government", "Public health", "Energy", "Oil & gas", "Water utilities", "Semiconductors", "Automotive", "Manufacturing"]
+    },
+    "stats": [
+      { "value": "9", "label": "industries served" },
+      { "value": "4+", "label": "countries with delivered projects" },
+      { "value": "2 continents", "label": "Europe and Brazil" },
+      { "value": "EN · PT · ES", "label": "delivery in three languages" }
+    ],
+    "pains": {
+      "eyebrow": "Where we help",
+      "title": "If your operation looks like this, it can be automated.",
+      "items": [
+        { "title": "Spreadsheets and rework", "text": "Teams spending hours copying data between spreadsheets, emails and systems." },
+        { "title": "Systems that don't talk", "text": "Every department has its own data, and the numbers never match in the meeting." },
+        { "title": "Reports that take days", "text": "Month-end close, KPIs and compliance reports assembled by hand." },
+        { "title": "Rising operating cost", "text": "Overtime and extra hires just to keep the routine running." }
+      ]
+    },
+    "services": {
+      "eyebrow": "What we do",
+      "title": "From manual process to decision dashboard.",
+      "intro": "Five capabilities that combine to fit the problem, always with a measurable outcome."
+    },
+    "audiences": {
+      "eyebrow": "Who we work with",
+      "title": "Three types of client.",
+      "items": [
+        { "title": "Companies in Europe and Brazil", "text": "Energy, utilities, health, manufacturing and services. Lower operating cost, trusted data and platforms that scale.", "page": "services" },
+        { "title": "Public bodies", "text": "Ministries, health services and municipalities: automated reporting and modern data platforms without growing headcount.", "page": "publicSector" },
+        { "title": "Consultancies and integrators", "text": "Senior capacity on demand in Microsoft Fabric, Azure, Power BI and data engineering, per project or as a subcontractor.", "page": "contact" }
+      ]
+    },
+    "casesPreview": {
+      "eyebrow": "Track record",
+      "title": "Delivered where mistakes are expensive.",
+      "intro": "Government, public health, energy and heavy industry. Client names are withheld for confidentiality."
+    },
+    "process": {
+      "eyebrow": "How we work",
+      "title": "Start small, prove value, then scale.",
+      "steps": [
+        { "title": "Discovery", "text": "A free 30-minute call and a map of the processes that cost you the most time and money." },
+        { "title": "Pilot", "text": "One high-return workstream, delivered in weeks, with results measured before scaling." },
+        { "title": "Scale", "text": "Roll out to other areas, reusing the data foundation and models already built." },
+        { "title": "Support", "text": "Ongoing support, continuous improvement and knowledge transfer to your team." }
+      ]
+    },
+    "models": {
+      "eyebrow": "Engagement models",
+      "title": "Flexible to fit your budget.",
+      "items": [
+        { "title": "Fixed-scope project", "text": "Defined scope, timeline and price." },
+        { "title": "Time & materials", "text": "Hourly or daily rate for ongoing needs." },
+        { "title": "Dedicated specialist", "text": "A senior engineer embedded in your team." },
+        { "title": "Subcontracting", "text": "For consultancies and integrators." }
+      ]
+    },
+    "founder": {
+      "eyebrow": "Technical leadership",
+      "name": "Wallison Campanelli",
+      "role": "Founder & Technical Director",
+      "bio": "Senior data engineer with projects delivered for government, public health, energy, oil & gas, water utilities and manufacturing across Europe and Brazil. Specialist in Microsoft Fabric, Azure, Power BI, SQL and PySpark. Background in Mining Engineering and Physics, and a PhD candidate in Physics at the University of Lisbon: analytical rigour applied to business problems.",
+      "link": "About the company"
+    },
+    "finalCta": {
+      "title": "How much time does your team lose to manual work?",
+      "text": "In 30 minutes we map the opportunities and estimate the gain. Free, no commitment."
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Automation, data and BI with measurable outcomes.",
+      "subtitle": "Every project starts with one question: what does this process cost you today in time and money? From there, we choose the leanest solution that solves it."
+    },
+    "items": [
+      {
+        "id": "automation",
+        "title": "Process automation",
+        "summary": "Manual routines become automated workflows: extraction, checks, reconciliation, reports and alerts.",
+        "bullets": ["Automated routines, reports and month-end close", "Integration between systems, APIs and spreadsheets", "Automated reconciliation and data validation", "Alerts and notifications by email or Teams", "Power Automate, Python, SQL, VBA"],
+        "outcome": "Fewer operational hours, fewer human errors and a team free to focus on what matters."
+      },
+      {
+        "id": "data",
+        "title": "Databases and data engineering",
+        "summary": "A single, trusted data foundation, fed automatically from all your systems.",
+        "bullets": ["Database design and build", "ETL/ELT pipelines and source integration", "Legacy migration (Excel, Access, SSIS)", "Data quality, documentation and governance", "SQL Server, Oracle, PostgreSQL"],
+        "outcome": "One number per KPI, with no shadow spreadsheets."
+      },
+      {
+        "id": "bi",
+        "title": "BI and management dashboards",
+        "summary": "Executive and operational dashboards that refresh themselves and answer management's questions.",
+        "bullets": ["Power BI, DAX and star-schema modelling", "KPI and target definition", "Executive and operational dashboards", "Excel reporting migrated to Power BI", "Costing and allocation models"],
+        "outcome": "Decisions in minutes, not after days of month-end work."
+      },
+      {
+        "id": "cloud",
+        "title": "Cloud data platforms",
+        "summary": "Modern architecture for organisations that need to scale data securely and with governance.",
+        "bullets": ["Microsoft Fabric and Azure", "Databricks, Snowflake, Spark / PySpark", "Lakehouse and data warehouse architecture", "Orchestration, monitoring and cost control", "On-premises to cloud migration"],
+        "outcome": "A platform that grows with the business, without rework for every new area."
+      },
+      {
+        "id": "ai",
+        "title": "Applied AI",
+        "summary": "AI where it delivers concrete returns, built on trusted data.",
+        "bullets": ["Document classification and extraction", "Demand, revenue and cost forecasting", "Anomaly and fraud detection", "AI assistants connected to your data", "Python, Azure AI, language models"],
+        "outcome": "Repetitive analysis done at scale, with human review where it matters."
+      }
+    ],
+    "partners": {
+      "eyebrow": "For consultancies and integrators",
+      "title": "Senior capacity when your team needs it.",
+      "text": "We act as a delivery partner for consultancies in Europe and Brazil: subcontracting, dedicated specialists or remote squads in Microsoft Fabric, Azure, Power BI and data engineering. We also support foreign companies with projects and clients in Brazil."
+    }
+  },
+  "publicSector": {
+    "hero": {
+      "eyebrow": "Public sector",
+      "title": "Public bodies delivering more without growing headcount.",
+      "subtitle": "Tight budgets and staff shortages don't have to stall public services. We automate repetitive work and give managers reliable numbers to decide on."
+    },
+    "pains": {
+      "eyebrow": "What we usually find",
+      "title": "Common challenges across public organisations.",
+      "items": [
+        "Budget pressure and limits on new hires",
+        "Overtime and temporary staff to keep routine work running",
+        "Processes still running on paper, spreadsheets and email",
+        "Audit and compliance reporting assembled by hand",
+        "Health, education and revenue data in systems that don't talk",
+        "Leadership without a quick view of performance"
+      ]
+    },
+    "solutions": {
+      "eyebrow": "What we deliver",
+      "title": "Automation and data for public administration.",
+      "items": [
+        { "title": "Reporting and compliance automation", "text": "Statutory, audit and transparency reports generated automatically from source systems." },
+        { "title": "Modern data platforms", "text": "Microsoft Fabric and Azure platforms that consolidate data across departments, with governance and security." },
+        { "title": "Health and social care analytics", "text": "Prescriptions, waiting lists, primary care and service indicators in trusted dashboards." },
+        { "title": "Performance dashboards", "text": "Targets for every department on one screen, refreshed automatically." },
+        { "title": "Revenue and collections", "text": "Cross-checking registers, collection workflows and arrears dashboards." },
+        { "title": "Legacy migration", "text": "Excel, Access and SSIS processes moved to maintainable, documented pipelines." }
+      ]
+    },
+    "results": {
+      "eyebrow": "What changes",
+      "title": "Results for managers and citizens.",
+      "items": ["Less overtime and rework", "Faster, auditable reporting", "Lower compliance risk", "Staff focused on service, not spreadsheets", "Data-driven decisions"]
+    },
+    "experience": {
+      "title": "Experience in government and public health",
+      "text": "Our technical leadership has delivered projects for a European government ministry, a national health service and a network of health and social care institutions, environments with high standards for security, audit and reliability. In Brazil, we work with municipalities under public procurement law 14.133/2021."
+    },
+    "howToHire": {
+      "eyebrow": "How to engage",
+      "title": "A simple, low-risk path.",
+      "steps": [
+        { "title": "Free discovery", "text": "We map the processes of one or more departments and estimate the hours and costs saved." },
+        { "title": "Pilot", "text": "One high-return workstream, scoped to fit your procurement rules." },
+        { "title": "Scale", "text": "Extend to other departments through the appropriate procurement route." },
+        { "title": "Support", "text": "Monthly support, dashboard evolution and staff training." }
+      ]
+    },
+    "compliance": ["Registered Brazilian company (CNPJ)", "GDPR / LGPD compliant", "Knowledge transfer to your staff", "Works with the systems you already use"],
+    "finalCta": {
+      "title": "Shall we map where your organisation can save?",
+      "text": "Free discovery, with a savings estimate per department."
+    }
+  },
+  "cases": {
+    "hero": {
+      "eyebrow": "Case studies",
+      "title": "Delivered in demanding environments.",
+      "subtitle": "Projects delivered by our technical leadership, directly or in partnership with consultancies. Client names are withheld for confidentiality; further detail can be shared in a meeting, subject to confidentiality agreements."
+    },
+    "items": [
+      { "sector": "Government", "region": "Portugal", "title": "Data and reporting for a European government ministry", "challenge": "Information scattered across systems and management reports assembled manually.", "delivered": "Data engineering and analytics to consolidate sources and deliver reliable management reporting.", "stack": ["SQL", "Data engineering", "Power BI"], "featured": true },
+      { "sector": "Public health", "region": "Portugal", "title": "Prescription analytics for a national health service", "challenge": "A complex analytical model that was hard to maintain and slow to answer management questions.", "delivered": "Model refactored into a star schema on Oracle, with Power BI dashboards.", "stack": ["Oracle", "Power BI", "DAX", "Dimensional modelling"], "featured": true },
+      { "sector": "Health and social care", "region": "Portugal", "title": "Data for a network of health and social care institutions", "challenge": "Decentralised information across units and little consolidated visibility.", "delivered": "Data consolidation and management dashboards to monitor the network.", "stack": ["Data engineering", "Power BI"] },
+      { "sector": "Energy", "region": "Portugal", "title": "Costing models moved from Excel to Power BI for a European energy group", "challenge": "Critical costing models relying on large spreadsheets and manual steps.", "delivered": "Models migrated to Power BI, plus data platform work on Microsoft Fabric.", "stack": ["Power BI", "DAX", "Microsoft Fabric"], "featured": true },
+      { "sector": "Oil & gas", "region": "Switzerland", "title": "Data platform for offshore oil & gas groups", "challenge": "Operational data locked in legacy ETL and disconnected sources.", "delivered": "Microsoft Fabric/Azure data platform with PySpark pipelines and SSIS modernisation.", "stack": ["Microsoft Fabric", "Azure", "PySpark", "SSIS"] },
+      { "sector": "Water utilities", "region": "United Kingdom", "title": "Data platform for a water and wastewater company", "challenge": "Operational and commercial data needed consolidating on a modern platform.", "delivered": "Microsoft Fabric/Azure data platform with pipelines and an analytics layer.", "stack": ["Microsoft Fabric", "Azure", "PySpark"] },
+      { "sector": "Semiconductors", "region": "International", "title": "Data engineering for a global semiconductor manufacturer", "challenge": "Large volumes of production and business data to integrate.", "delivered": "Pipelines and data models for analytics.", "stack": ["Data engineering", "SQL", "Python"] },
+      { "sector": "Automotive", "region": "Portugal", "title": "Data for a multinational automotive group", "challenge": "Operations spread across several countries and business units.", "delivered": "Data engineering and analytics for group operations.", "stack": ["Data engineering", "Power BI"], "ongoing": true },
+      { "sector": "Manufacturing", "region": "Brazil", "title": "Analytics for a multinational manufacturer", "challenge": "Operational and commercial reporting relying on manual work.", "delivered": "Report automation and KPI dashboards.", "stack": ["Power BI", "VBA", "SQL"] }
+    ],
+    "finalCta": {
+      "title": "Want a similar result in your operation?",
+      "text": "Tell us the challenge and we'll show how we'd solve it, with an estimate of the gain."
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "Enterprise-grade delivery, lean-team responsiveness.",
+      "subtitle": "Campanelli Analytics LTDA is a Brazilian data engineering, automation and BI company, headquartered in Muzambinho (Minas Gerais) and operating from Lisbon, Portugal."
+    },
+    "story": [
+      "The company grew out of its founder's work on data projects for government, public health and large enterprises in Europe, where reliability, security and auditability are non-negotiable.",
+      "We bring that standard to companies and public bodies in Europe and Brazil with a lean structure: the person who designs the solution is the person who builds it."
+    ],
+    "values": {
+      "title": "How we work",
+      "items": [
+        { "title": "Measurable outcomes", "text": "Every project starts with a clear target in hours, cost or revenue." },
+        { "title": "Senior delivery", "text": "No layers: whoever designs the solution builds it." },
+        { "title": "Confidentiality", "text": "Client data and projects handled discreetly and under GDPR/LGPD." },
+        { "title": "Client autonomy", "text": "Documentation and knowledge transfer to your team." }
+      ]
+    },
+    "founder": {
+      "title": "Founder & Technical Director",
+      "bio": [
+        "Wallison Campanelli is a senior data engineer with projects delivered for government, public health, energy, oil & gas, water utilities, semiconductors, automotive and manufacturing across Brazil, Portugal, Switzerland and the United Kingdom.",
+        "He works across the whole data lifecycle: process automation, databases, ETL/ELT pipelines, platforms on Microsoft Fabric and Azure, Databricks, Snowflake, PySpark, SQL and Power BI.",
+        "He has a background in Mining Engineering and Physics and is a PhD candidate in Physics at the University of Lisbon. That grounding gives him the analytical rigour and systems thinking he applies to business problems.",
+        "He works in English, Portuguese and Spanish."
+      ]
+    },
+    "company": {
+      "title": "Company details",
+      "rows": [
+        { "label": "Legal name", "value": "Campanelli Analytics LTDA" },
+        { "label": "Tax ID (CNPJ)", "value": "62.856.593/0001-40" },
+        { "label": "Headquarters", "value": "Muzambinho, MG, Brazil" },
+        { "label": "Operations", "value": "Brazil and Portugal, with projects across Europe" },
+        { "label": "Languages", "value": "English, Portuguese and Spanish" }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your challenge.",
+      "subtitle": "Pick whichever channel suits you. We reply within 2 business days with a proposed next step."
+    },
+    "channels": {
+      "call": { "title": "Book a 30-minute call", "text": "Free discovery over video." },
+      "whatsapp": { "title": "WhatsApp", "text": "Quick answers and scheduling." },
+      "email": { "title": "Email", "text": "For proposals and documents." }
+    },
+    "form": {
+      "title": "Or send us a message",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone / WhatsApp",
+      "organization": "Company or organisation",
+      "location": "City / country",
+      "interest": "Topic",
+      "message": "Tell us about the challenge",
+      "messagePlaceholder": "E.g. our team spends 3 days a month building report X from 4 spreadsheets...",
+      "consent": "I agree to be contacted about this request, as described in the Privacy Policy.",
+      "submit": "Send message",
+      "subject": "New website enquiry (EN)",
+      "interestOptions": ["Process automation", "Database / data engineering", "BI and dashboards", "Cloud platform (Fabric / Azure)", "Applied AI", "Public sector", "Partnership or subcontracting", "Other"]
+    }
+  },
+  "thanks": {
+    "title": "Message received!",
+    "text": "Thank you for getting in touch. We'll reply within 2 business days. If you'd like to move faster, book a 30-minute call now.",
+    "back": "Back to home"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "sections": [
+      { "heading": "Overview", "text": "This policy explains how Campanelli Analytics LTDA (Brazilian CNPJ 62.856.593/0001-40) handles information submitted voluntarily through this website, in line with the GDPR and Brazil's LGPD (Law 13.709/2018)." },
+      { "heading": "What we collect", "text": "Name, email, phone, organisation, location and the message sent through the contact form, used solely to respond to your request." },
+      { "heading": "How data is sent", "text": "The form is processed by the FormSubmit service, which forwards the message to our email. The website does not store submissions in its own database, and we do not sell or share them for marketing." },
+      { "heading": "Your rights", "text": "You may request access to, correction of or deletion of your data at any time." },
+      { "heading": "Privacy contact", "text": "wallisoncampanelli.eng@gmail.com" }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "sections": [
+      { "heading": "Acceptance", "text": "By accessing this website, you agree to these terms of use." },
+      { "heading": "Purpose of the site", "text": "This website presents institutional and commercial information about Campanelli Analytics LTDA. It is not a binding offer; engagement terms are set out in specific proposals and contracts." },
+      { "heading": "Case studies and experience", "text": "The projects described were delivered by the company's technical leadership, directly or in partnership with consultancies. Client names are omitted for confidentiality." },
+      { "heading": "No warranties", "text": "Content is provided for information purposes. We make reasonable efforts to keep it accurate and up to date." },
+      { "heading": "Contact", "text": "wallisoncampanelli.eng@gmail.com" }
+    ]
+  },
+  "footer": {
+    "tagline": "Automation, data engineering and BI for companies and public bodies.",
+    "company": "Campanelli Analytics LTDA",
+    "cnpj": "CNPJ 62.856.593/0001-40",
+    "address": "Muzambinho, MG, Brazil · Lisbon, Portugal",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}

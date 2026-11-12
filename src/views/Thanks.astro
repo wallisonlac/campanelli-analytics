@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { t, href, CALENDLY, type Lang } from "../i18n";
+export interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const c = t(lang);
+---
+<BaseLayout lang={lang} page="thanks" noindex>
+  <section class="section">
+    <div class="container narrow text-center thanks">
+      <h1>{c.thanks.title}</h1>
+      <p class="lead-sm">{c.thanks.text}</p>
+      <div class="btn-row btn-row--center">
+        <a class="btn btn--primary btn--lg" href={CALENDLY} target="_blank" rel="noopener">{c.ui.bookCall}</a>
+        <a class="btn btn--outline btn--lg" href={href("home", lang)}>{c.thanks.back}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

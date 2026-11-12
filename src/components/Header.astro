@@ -1,53 +1,44 @@
 ---
-import LanguageSwitcher from "./LanguageSwitcher.astro";
-export interface Props {
-  lang: "en" | "pt";
-  nav: Record<string, string>;
-  altPath: string;
-}
-const { lang, nav, altPath } = Astro.props;
-const base = lang === "en" ? "/en" : "/pt";
-const links = lang === "en"
-  ? [
-      { href: "/en/", label: nav.home },
-      { href: "/en/services/", label: nav.services },
-      { href: "/en/global-delivery/", label: nav.globalDelivery },
-      { href: "/en/partnerships/", label: nav.partnerships },
-      { href: "/en/about/", label: nav.about },
-      { href: "/en/contact/", label: nav.contact },
-    ]
-  : [
-      { href: "/pt/", label: nav.home },
-      { href: "/pt/servicos/", label: nav.services },
-      { href: "/pt/entrega-internacional/", label: nav.globalDelivery },
-      { href: "/pt/parcerias/", label: nav.partnerships },
-      { href: "/pt/sobre/", label: nav.about },
-      { href: "/pt/contato/", label: nav.contact },
-    ];
-const currentPath = Astro.url.pathname;
+import { t, href, navKeys, routes, CALENDLY, type Lang, type PageKey } from "../i18n";
+
+export interface Props { lang: Lang; page: PageKey; }
+const { lang, page } = Astro.props;
+const c = t(lang);
+const links = navKeys.map((k) => ({ key: k, href: href(k, lang), label: c.nav[k] }));
 ---
 <header class="site-header">
-  <div class="container">
-    <a class="logo" href={base + "/"}>Campanelli<span>Analytics</span></a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav-links">
-        <span class="visually-hidden">Menu</span>
-        ☰
-      </button>
-      <ul class="main-nav__links" id="main-nav-links">
+  <div class="container header-inner">
+    <a class="brand" href={href("home", lang)} aria-label="Campanelli Analytics">
+      <picture>
+        <source srcset="/logo.webp" type="image/webp" />
+        <img src="/logo.png" alt="Campanelli Analytics" width="200" height="48" />
+      </picture>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="visually-hidden">{c.ui.menu}</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
         {links.map((l) => (
-          <li><a href={l.href} aria-current={currentPath === l.href ? "page" : undefined}>{l.label}</a></li>
+          <li><a href={l.href} aria-current={page === l.key ? "page" : undefined}>{l.label}</a></li>
         ))}
       </ul>
-      <LanguageSwitcher lang={lang} altPath={altPath} />
+      <div class="lang-switch" role="group" aria-label={c.ui.langLabel}>
+        <a href={routes[page].pt} hreflang="pt-BR" aria-current={lang === "pt" ? "true" : undefined}>PT</a>
+        <a href={routes[page].en} hreflang="en" aria-current={lang === "en" ? "true" : undefined}>EN</a>
+      </div>
+      <a class="btn btn--primary btn--sm" href={CALENDLY} target="_blank" rel="noopener">{c.nav.cta}</a>
     </nav>
   </div>
 </header>
 <script>
   const toggle = document.getElementById("nav-toggle");
-  const links = document.getElementById("main-nav-links");
+  const nav = document.getElementById("site-nav");
   toggle?.addEventListener("click", () => {
-    const isOpen = links?.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", String(Boolean(isOpen)));
+    const open = nav?.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(Boolean(open)));
   });
 </script>
