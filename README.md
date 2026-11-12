@@ -36,48 +36,31 @@ O `npm run build` gera a pasta `dist/`, que é o que o GitHub Pages publica.
 ## 4. Estrutura do projeto
 
 ```
-campanelli-analytics/
-├── public/                  # arquivos estáticos (favicon, CNAME, robots.txt, sitemap.xml)
-├── src/
-│   ├── components/          # componentes reutilizáveis (.astro)
-│   ├── content/             # conteúdo em en.json e pt.json
-│   ├── layouts/             # BaseLayout.astro
-│   ├── pages/
-│   │   ├── index.astro      # redireciona para /en/
-│   │   ├── en/               # páginas em inglês
-│   │   └── pt/               # páginas em português
-│   └── styles/               # global.css
-├── .github/workflows/deploy.yml  # deploy automático para GitHub Pages
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+src/
+├── i18n/
+│   ├── pt.json / en.json   # TODO o texto do site (edite aqui)
+│   ├── routes.ts           # URLs PT/EN, Calendly, WhatsApp, e-mail, LinkedIn
+│   └── index.ts
+├── views/                  # layout de cada página (compartilhado PT/EN)
+├── pages/pt, pages/en      # arquivos finos que só chamam a view no idioma certo
+├── components/             # Header, Footer, ContactForm, CaseCard, HeroVisual...
+├── layouts/BaseLayout.astro
+└── styles/global.css       # cores da marca (navy + teal do logo)
+public/                     # logo, favicon, og-pt.png / og-en.png (preview WhatsApp/LinkedIn), CNAME
 ```
 
-## 5. Como editar os textos em inglês e português
+O sitemap é gerado automaticamente no build (`@astrojs/sitemap`). As URLs antigas
+(`/parcerias/`, `/entrega-internacional/`, `/capacidades/` e equivalentes EN) redirecionam para as novas.
 
-Todo o conteúdo comercial (textos, títulos, listas de serviços, CTAs, footer, etc.) está centralizado em dois arquivos JSON:
+## 5. Como editar textos
 
-- `src/content/en.json` — conteúdo em inglês
-- `src/content/pt.json` — conteúdo em português
+Edite `src/i18n/pt.json` e `src/i18n/en.json`. Contatos (Calendly, WhatsApp, e-mail, LinkedIn) ficam em `src/i18n/routes.ts`.
 
-Edite os valores diretamente nesses arquivos. As páginas `.astro` em `src/pages/en/` e `src/pages/pt/` apenas consomem esses dados — normalmente você não precisa tocar nas páginas para alterar texto, apenas nos JSONs.
+## 6. Formulário de contato
 
-## 6. Como substituir os placeholders
-
-Os seguintes campos aparecem como placeholders em **ambos** os arquivos de conteúdo (`en.json` e `pt.json`) e devem ser substituídos antes de divulgar o site:
-
-| Placeholder | Onde aparece | Substituir por |
-|---|---|---|
-| `[SUBSTITUIR_POR_EMAIL]` | `contact.email`, textos de privacy/terms | seu e-mail corporativo real |
-| `[SUBSTITUIR_POR_LINKEDIN]` | `leadership.linkedin`, `about.linkedin`, `contact.linkedin` | URL do seu LinkedIn |
-| `[SUBSTITUIR_POR_GITHUB]` | `leadership.github`, `about.github`, `contact.github` | URL do seu GitHub |
-| `[SUBSTITUIR_POR_CALENDLY_OU_OUTRO]` | `contact.calendly` | link de agendamento (Calendly, Cal.com etc.) |
-| `[SUBSTITUIR_POR_FOTO]` | `leadership.photoPlaceholder`, `about.photoPlaceholder` | substitua o bloco `.leadership__photo` por uma `<img>` real apontando para um arquivo em `public/images/` |
-| `[SUBSTITUIR_POR_LOGO]` | `about.logoPlaceholder` | logo definitivo, se/quando existir |
-
-Depois de definir o e-mail real, revise também o `src/components/ContactForm.astro`, que usa `mailto:${contact.email}` como destino do formulário — não requer nenhuma alteração de código, só o valor no JSON.
-
-Para inserir um ID de analytics (Plausible ou Google Analytics) futuramente, adicione o snippet no comentário reservado dentro de `src/components/SEO.astro` (procure por "Analytics placeholder").
+O formulário envia via [FormSubmit](https://formsubmit.co) para o e-mail definido em `routes.ts`.
+**Na primeira mensagem enviada, o FormSubmit manda um e-mail de ativação — clique no link uma vez.**
+Depois disso, cada envio chega na caixa de entrada e o visitante vê a página `/pt/obrigado/` ou `/en/thank-you/`.
 
 ## 7. Como criar o repositório no GitHub
 

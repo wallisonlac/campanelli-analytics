@@ -1,0 +1,28 @@
+---
+import { t, type Lang } from "../i18n";
+export interface Props {
+  lang: Lang;
+  item: { sector: string; region: string; title: string; challenge: string; delivered: string; stack: string[]; ongoing?: boolean };
+  compact?: boolean;
+}
+const { lang, item, compact = false } = Astro.props;
+const c = t(lang);
+---
+<article class="case-card">
+  <div class="case-card__tags">
+    <span class="tag tag--sector">{item.sector}</span>
+    <span class="tag">{item.region}</span>
+    {item.ongoing && <span class="tag tag--live">{c.ui.ongoing}</span>}
+  </div>
+  <h3>{item.title}</h3>
+  {!compact && (
+    <dl class="case-card__body">
+      <dt>{c.ui.challenge}</dt><dd>{item.challenge}</dd>
+      <dt>{c.ui.delivered}</dt><dd>{item.delivered}</dd>
+    </dl>
+  )}
+  {compact && <p>{item.delivered}</p>}
+  <ul class="chips" aria-label={c.ui.stack}>
+    {item.stack.map((s) => <li>{s}</li>)}
+  </ul>
+</article>

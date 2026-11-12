@@ -1,36 +1,42 @@
 ---
-export interface Props {
-  lang: "en" | "pt";
-  footer: Record<string, string>;
-  privacyPath: string;
-  termsPath: string;
-  linkedin: string;
-  github: string;
-}
-const { lang, footer, privacyPath, termsPath, linkedin, github } = Astro.props;
+import { t, href, navKeys, EMAIL, WHATSAPP, LINKEDIN, CALENDLY, type Lang } from "../i18n";
+export interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const c = t(lang);
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <strong>{footer.companyLine}</strong><br />
-        <span>{footer.cnpjLine}</span><br />
-        <span>{footer.positioningLine}</span><br />
-        <span>{footer.locationLine}</span>
-      </div>
-      <nav aria-label="Footer links">
-        <ul>
-          <li><a href={privacyPath}>{footer.privacyLabel}</a></li>
-          <li><a href={termsPath}>{footer.termsLabel}</a></li>
-          <li><a href={linkedin} rel="noopener">LinkedIn</a></li>
-          <li><a href={github} rel="noopener">GitHub</a></li>
-        </ul>
-      </nav>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="/logo.png" alt="Campanelli Analytics" width="200" height="48" loading="lazy" class="footer-logo" />
+      <p>{c.footer.tagline}</p>
+      <p class="footer-legal">
+        {c.footer.company}<br />
+        {c.footer.cnpj}<br />
+        {c.footer.address}
+      </p>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; {year} Campanelli Analytics LTDA.</span>
-      <span>{lang === "pt" ? "Brasil · Portugal · Entrega Global" : "Brazil · Portugal · Global Delivery"}</span>
+    <nav aria-label={c.footer.navTitle}>
+      <h2 class="footer-title">{c.footer.navTitle}</h2>
+      <ul>
+        {navKeys.map((k) => <li><a href={href(k, lang)}>{c.nav[k]}</a></li>)}
+      </ul>
+    </nav>
+    <div>
+      <h2 class="footer-title">{c.footer.contactTitle}</h2>
+      <ul>
+        <li><a href={CALENDLY} target="_blank" rel="noopener">{c.nav.cta}</a></li>
+        <li><a href={WHATSAPP} target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href={`mailto:${EMAIL}`}>{EMAIL}</a></li>
+        <li><a href={LINKEDIN} target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
     </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; {year} {c.footer.company}</span>
+    <span>
+      <a href={href("privacy", lang)}>{c.footer.privacy}</a> ·
+      <a href={href("terms", lang)}>{c.footer.terms}</a>
+    </span>
   </div>
 </footer>

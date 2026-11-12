@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import CTABand from "../components/CTABand.astro";
+import Icon from "../components/Icon.astro";
+import { t, href, CALENDLY, type Lang } from "../i18n";
+export interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const c = t(lang);
+const s = c.services;
+const icons = ["automation", "data", "bi", "cloud", "ai"];
+---
+<BaseLayout lang={lang} page="services">
+  <PageHero eyebrow={s.hero.eyebrow} title={s.hero.title} subtitle={s.hero.subtitle}>
+    <nav class="jump" aria-label={s.hero.eyebrow}>
+      {s.items.map((i) => <a href={`#${i.id}`}>{i.title}</a>)}
+    </nav>
+  </PageHero>
+
+  <section class="section">
+    <div class="container service-list">
+      {s.items.map((item, i) => (
+        <article class="service-row" id={item.id}>
+          <div class="service-row__head">
+            <span class="service-tile__icon"><Icon name={icons[i]} /></span>
+            <h2>{item.title}</h2>
+            <p class="lead-sm">{item.summary}</p>
+          </div>
+          <div class="service-row__body">
+            <ul class="checklist">{item.bullets.map((b) => <li>{b}</li>)}</ul>
+            <p class="outcome"><strong>{c.ui.outcome}:</strong> {item.outcome}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{c.home.models.eyebrow}</p>
+        <h2>{c.home.models.title}</h2>
+      </div>
+      <div class="grid grid--4">
+        {c.home.models.items.map((m) => <div class="model"><h3>{m.title}</h3><p>{m.text}</p></div>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="partners">
+    <div class="container narrow">
+      <p class="eyebrow">{s.partners.eyebrow}</p>
+      <h2>{s.partners.title}</h2>
+      <p class="lead-sm">{s.partners.text}</p>
+      <a class="btn btn--primary" href={href("contact", lang)}>{c.nav.contact}</a>
+    </div>
+  </section>
+
+  <CTABand lang={lang} title={c.home.finalCta.title} text={c.home.finalCta.text} />
+</BaseLayout>

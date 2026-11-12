@@ -1,43 +1,38 @@
 ---
+import "@fontsource-variable/inter";
+import "@fontsource-variable/manrope";
+import "../styles/global.css";
 import SEO from "../components/SEO.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import "../styles/global.css";
+import WhatsAppFab from "../components/WhatsAppFab.astro";
+import { t, type Lang, type PageKey } from "../i18n";
 
 export interface Props {
-  lang: "en" | "pt";
-  htmlLang: string;
-  title: string;
-  description: string;
-  path: string;
-  altPath: string;
-  nav: Record<string, string>;
-  footer: Record<string, string>;
-  privacyPath: string;
-  termsPath: string;
-  linkedin: string;
-  github: string;
+  lang: Lang;
+  page: PageKey;
+  noindex?: boolean;
 }
-
-const {
-  lang, htmlLang, title, description, path, altPath,
-  nav, footer, privacyPath, termsPath, linkedin, github,
-} = Astro.props;
+const { lang, page, noindex = false } = Astro.props;
+const c = t(lang);
+const meta = c.meta[page];
 ---
 <!doctype html>
-<html lang={htmlLang}>
+<html lang={c.htmlLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <SEO lang={lang} title={title} description={description} path={path} altPath={altPath} />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <SEO lang={lang} page={page} title={meta.title} description={meta.description} ogLocale={c.ogLocale} noindex={noindex} />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <Header lang={lang} nav={nav} altPath={altPath} />
+    <a class="skip-link" href="#main-content">{c.ui.skip}</a>
+    <Header lang={lang} page={page} />
     <main id="main-content">
       <slot />
     </main>
-    <Footer lang={lang} footer={footer} privacyPath={privacyPath} termsPath={termsPath} linkedin={linkedin} github={github} />
+    <Footer lang={lang} />
+    <WhatsAppFab lang={lang} />
   </body>
 </html>

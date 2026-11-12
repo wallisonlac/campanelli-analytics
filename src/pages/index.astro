@@ -1,24 +1,31 @@
 ---
+// Root: send visitors to their language. Portuguese browsers -> /pt/, everyone else -> /en/.
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=/en/" />
-    <link rel="canonical" href="https://campanellianalytics.com/en/" />
-    <title>Campanelli Analytics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Campanelli Analytics | Automation, Data Engineering & BI</title>
+    <meta name="description" content="Process automation, data engineering and BI for companies and public bodies in Brazil and Europe. Automação, engenharia de dados e BI para empresas e governos." />
+    <link rel="canonical" href="https://campanellianalytics.com/en/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/" />
+    <link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://campanellianalytics.com/" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <meta property="og:image" content="https://campanellianalytics.com/og-pt.png" />
+    <script is:inline>
+      (function () {
+        var langs = (navigator.languages || [navigator.language || ""]).join(",").toLowerCase();
+        location.replace(/(^|,)pt/.test(langs) ? "/pt/" : "/en/");
+      })();
+    </script>
     <style>
-      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#0B1F3A; color:#fff; display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; }
-      .box { text-align:center; }
-      a { color:#00D9E0; font-weight:700; text-decoration:none; margin:0 10px; }
+      body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; background:#0B1D3A; color:#fff; font-family: system-ui, sans-serif; }
+      a { color:#19C3C3; font-weight:700; margin:0 12px; text-decoration:none; }
     </style>
   </head>
   <body>
-    <div class="box">
-      <p>Campanelli Analytics</p>
-      <p><a href="/en/">English</a> · <a href="/pt/">Português</a></p>
-    </div>
+    <p><a href="/pt/">Português</a> · <a href="/en/">English</a></p>
   </body>
 </html>

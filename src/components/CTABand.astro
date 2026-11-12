@@ -1,0 +1,18 @@
+---
+import { t, CALENDLY, WHATSAPP, type Lang } from "../i18n";
+export interface Props { lang: Lang; title: string; text: string; }
+const { lang, title, text } = Astro.props;
+const c = t(lang);
+---
+<section class="cta-band">
+  <div class="container cta-band__inner">
+    <div>
+      <h2>{title}</h2>
+      <p>{text}</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn--primary btn--lg" href={CALENDLY} target="_blank" rel="noopener">{c.ui.bookCall}</a>
+      <a class="btn btn--ghost btn--lg" href={WHATSAPP} target="_blank" rel="noopener">{c.ui.whatsapp}</a>
+    </div>
+  </div>
+</section>

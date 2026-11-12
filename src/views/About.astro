@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import CTABand from "../components/CTABand.astro";
+import { t, LINKEDIN, GITHUB, type Lang } from "../i18n";
+export interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const c = t(lang);
+const a = c.about;
+---
+<BaseLayout lang={lang} page="about">
+  <PageHero eyebrow={a.hero.eyebrow} title={a.hero.title} subtitle={a.hero.subtitle} />
+
+  <section class="section">
+    <div class="container narrow prose">
+      {a.story.map((p) => <p class="lead-sm">{p}</p>)}
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head"><h2>{a.values.title}</h2></div>
+      <div class="grid grid--4">
+        {a.values.items.map((v) => <div class="model"><h3>{v.title}</h3><p>{v.text}</p></div>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container founder">
+      <picture class="founder__photo">
+        <img src="/wallison.webp" alt={`Wallison Campanelli, ${a.founder.title}`} width="480" height="560" loading="lazy" />
+      </picture>
+      <div>
+        <p class="eyebrow">{a.founder.title}</p>
+        <h2>Wallison Campanelli</h2>
+        {a.founder.bio.map((p) => <p>{p}</p>)}
+        <p class="founder__links">
+          <a class="link-arrow" href={LINKEDIN} target="_blank" rel="noopener">LinkedIn →</a>
+          <a class="link-arrow" href={GITHUB} target="_blank" rel="noopener">GitHub →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container narrow">
+      <h2>{a.company.title}</h2>
+      <dl class="facts">
+        {a.company.rows.map((r) => (<><dt>{r.label}</dt><dd>{r.value}</dd></>))}
+      </dl>
+    </div>
+  </section>
+
+  <CTABand lang={lang} title={c.home.finalCta.title} text={c.home.finalCta.text} />
+</BaseLayout>
