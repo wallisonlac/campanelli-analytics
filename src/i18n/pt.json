@@ -316,7 +316,7 @@
       { "heading": "O que coletamos", "text": "Nome, e-mail, telefone, organização, localização e a mensagem enviada pelo formulário de contato, exclusivamente para responder à sua solicitação." },
       { "heading": "Como os dados são enviados", "text": "O formulário é processado pelo serviço FormSubmit, que encaminha a mensagem ao nosso e-mail. Não armazenamos os dados em bancos próprios do site e não os vendemos nem compartilhamos para fins de marketing." },
       { "heading": "Seus direitos", "text": "Você pode solicitar acesso, correção ou exclusão dos seus dados a qualquer momento." },
-      { "heading": "Contato sobre privacidade", "text": "wallisoncampanelli.eng@gmail.com" }
+      { "heading": "Contato sobre privacidade", "text": "contato@campanellianalytics.com" }
     ]
   },
   "terms": {
@@ -326,7 +326,7 @@
       { "heading": "Finalidade do site", "text": "Este site apresenta informações institucionais e comerciais sobre a Campanelli Analytics LTDA. Não constitui oferta comercial vinculante; condições de contratação são definidas em proposta e contrato específicos." },
       { "heading": "Cases e experiência", "text": "Os projetos descritos foram entregues pela liderança técnica da empresa, diretamente ou em parceria com consultorias. Os nomes de clientes são omitidos por confidencialidade." },
       { "heading": "Sem garantias", "text": "O conteúdo é fornecido para fins informativos. Fazemos esforços razoáveis para mantê-lo correto e atualizado." },
-      { "heading": "Contato", "text": "wallisoncampanelli.eng@gmail.com" }
+      { "heading": "Contato", "text": "contato@campanellianalytics.com" }
     ]
   },
   "footer": {

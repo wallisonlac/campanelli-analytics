@@ -316,7 +316,7 @@
       { "heading": "What we collect", "text": "Name, email, phone, organisation, location and the message sent through the contact form, used solely to respond to your request." },
       { "heading": "How data is sent", "text": "The form is processed by the FormSubmit service, which forwards the message to our email. The website does not store submissions in its own database, and we do not sell or share them for marketing." },
       { "heading": "Your rights", "text": "You may request access to, correction of or deletion of your data at any time." },
-      { "heading": "Privacy contact", "text": "wallisoncampanelli.eng@gmail.com" }
+      { "heading": "Privacy contact", "text": "contato@campanellianalytics.com" }
     ]
   },
   "terms": {
@@ -326,7 +326,7 @@
       { "heading": "Purpose of the site", "text": "This website presents institutional and commercial information about Campanelli Analytics LTDA. It is not a binding offer; engagement terms are set out in specific proposals and contracts." },
       { "heading": "Case studies and experience", "text": "The projects described were delivered by the company's technical leadership, directly or in partnership with consultancies. Client names are omitted for confidentiality." },
       { "heading": "No warranties", "text": "Content is provided for information purposes. We make reasonable efforts to keep it accurate and up to date." },
-      { "heading": "Contact", "text": "wallisoncampanelli.eng@gmail.com" }
+      { "heading": "Contact", "text": "contato@campanellianalytics.com" }
     ]
   },
   "footer": {
