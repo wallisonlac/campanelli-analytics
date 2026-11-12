@@ -21,6 +21,6 @@ export const navKeys: PageKey[] = ["services", "publicSector", "cases", "about",
 export const SITE = "https://campanellianalytics.com";
 export const CALENDLY = "https://calendly.com/wallisoncampanelli-eng/30min";
 export const WHATSAPP = "https://wa.me/351935678698";
-export const EMAIL = "wallisoncampanelli.eng@gmail.com";
+export const EMAIL = "contato@campanellianalytics.com";
 export const LINKEDIN = "https://www.linkedin.com/in/wallison-campanelli-eng/";
 export const GITHUB = "https://github.com/wallisonlac";
