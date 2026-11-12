@@ -52,7 +52,7 @@
       { "value": "PT · EN · ES", "label": "atendimento em três idiomas" }
     ],
     "pains": {
-      "eyebrow": "Onde a gente entra",
+      "eyebrow": "Onde atuamos",
       "title": "Se a sua operação vive assim, dá para automatizar.",
       "items": [
         { "title": "Planilhas e retrabalho", "text": "Equipes gastando horas copiando dados entre planilhas, e-mails e sistemas." },
@@ -82,7 +82,7 @@
     },
     "process": {
       "eyebrow": "Como trabalhamos",
-      "title": "Começa pequeno, prova valor, depois escala.",
+      "title": "Partimos do básico. Entregamos resultados. Depois escalamos.",
       "steps": [
         { "title": "Diagnóstico", "text": "Conversa gratuita de 30 minutos e mapeamento dos processos que mais consomem tempo e dinheiro." },
         { "title": "Piloto", "text": "Uma frente de alto retorno, entregue em semanas, com resultado medido antes de ampliar." },
