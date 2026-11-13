@@ -284,7 +284,7 @@
       "subtitle": "Escolha o canal mais prático. Retornamos em até 2 dias úteis com uma proposta de próximo passo."
     },
     "channels": {
-      "call": { "title": "Agendar conversa de 30 min", "text": "Diagnóstico gratuito por videochamada." },
+      "call": { "title": "Agendar conversa de 30 min", "text": "Diagnóstico gratuito por videochamada.", "cta": "Escolher horário" },
       "whatsapp": { "title": "WhatsApp", "text": "Resposta rápida para dúvidas e agendamentos." },
       "email": { "title": "E-mail", "text": "Para propostas e documentos." }
     },

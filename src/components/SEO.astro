@@ -1,5 +1,5 @@
 ---
-import { SITE, routes, LINKEDIN, EMAIL, type Lang, type PageKey } from "../i18n/routes";
+import { SITE, routes, LINKEDIN, EMAIL, WHATSAPP_TEL, BOOKING, type Lang, type PageKey } from "../i18n/routes";
 
 export interface Props {
   lang: Lang;
@@ -26,6 +26,16 @@ const orgSchema = {
   logo: `${SITE}/logo.png`,
   image: `${SITE}/og-${lang}.png`,
   email: EMAIL,
+  telephone: WHATSAPP_TEL,
+  contactPoint: [{
+    "@type": "ContactPoint",
+    contactType: "sales",
+    email: EMAIL,
+    telephone: WHATSAPP_TEL,
+    url: BOOKING,
+    availableLanguage: ["Portuguese", "English", "Spanish"],
+    areaServed: ["BR", "PT", "EU"],
+  }],
   description,
   founder: { "@type": "Person", name: "Wallison Campanelli", sameAs: [LINKEDIN] },
   address: { "@type": "PostalAddress", addressLocality: "Muzambinho", addressRegion: "MG", addressCountry: "BR" },

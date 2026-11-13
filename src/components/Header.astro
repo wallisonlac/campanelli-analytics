@@ -1,5 +1,5 @@
 ---
-import { t, href, navKeys, routes, CALENDLY, type Lang, type PageKey } from "../i18n";
+import { t, href, navKeys, routes, BOOKING, type Lang, type PageKey } from "../i18n";
 
 export interface Props { lang: Lang; page: PageKey; }
 const { lang, page } = Astro.props;
@@ -30,7 +30,7 @@ const links = navKeys.map((k) => ({ key: k, href: href(k, lang), label: c.nav[k]
         <a href={routes[page].pt} hreflang="pt-BR" aria-current={lang === "pt" ? "true" : undefined}>PT</a>
         <a href={routes[page].en} hreflang="en" aria-current={lang === "en" ? "true" : undefined}>EN</a>
       </div>
-      <a class="btn btn--primary btn--sm" href={CALENDLY} target="_blank" rel="noopener">{c.nav.cta}</a>
+      <a class="btn btn--primary btn--sm" href={BOOKING} target="_blank" rel="noopener">{c.nav.cta}</a>
     </nav>
   </div>
 </header>

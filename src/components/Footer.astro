@@ -1,5 +1,5 @@
 ---
-import { t, href, navKeys, EMAIL, WHATSAPP, LINKEDIN, CALENDLY, type Lang } from "../i18n";
+import { t, href, navKeys, EMAIL, whatsappHref, WHATSAPP_DISPLAY, LINKEDIN, BOOKING, type Lang } from "../i18n";
 export interface Props { lang: Lang; }
 const { lang } = Astro.props;
 const c = t(lang);
@@ -25,8 +25,8 @@ const year = new Date().getFullYear();
     <div>
       <h2 class="footer-title">{c.footer.contactTitle}</h2>
       <ul>
-        <li><a href={CALENDLY} target="_blank" rel="noopener">{c.nav.cta}</a></li>
-        <li><a href={WHATSAPP} target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href={BOOKING} target="_blank" rel="noopener">{c.nav.cta}</a></li>
+        <li><a href={whatsappHref(lang)} target="_blank" rel="noopener">WhatsApp {WHATSAPP_DISPLAY}</a></li>
         <li><a href={`mailto:${EMAIL}`}>{EMAIL}</a></li>
         <li><a href={LINKEDIN} target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
