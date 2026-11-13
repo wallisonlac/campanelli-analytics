@@ -22,7 +22,7 @@ export const SITE = "https://campanellianalytics.com";
 // Booking page for the 30-minute discovery call. Change it here and every
 // "Book a call" button on the site follows. (Google Calendar booking page:
 // paste its public calendar.app.google/... link here.)
-export const BOOKING = "https://calendly.com/wallisoncampanelli-eng/30min";
+export const BOOKING = "https://calendar.app.google/qunDn3n85kwfbXDZA";
 /** @deprecated use BOOKING */
 export const CALENDLY = BOOKING;
 
