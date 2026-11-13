@@ -39,7 +39,7 @@ O `npm run build` gera a pasta `dist/`, que é o que o GitHub Pages publica.
 src/
 ├── i18n/
 │   ├── pt.json / en.json   # TODO o texto do site (edite aqui)
-│   ├── routes.ts           # URLs PT/EN, Calendly, WhatsApp, e-mail, LinkedIn
+│   ├── routes.ts           # URLs PT/EN, agendamento (BOOKING), WhatsApp, e-mail, LinkedIn
 │   └── index.ts
 ├── views/                  # layout de cada página (compartilhado PT/EN)
 ├── pages/pt, pages/en      # arquivos finos que só chamam a view no idioma certo
@@ -54,7 +54,7 @@ O sitemap é gerado automaticamente no build (`@astrojs/sitemap`). As URLs antig
 
 ## 5. Como editar textos
 
-Edite `src/i18n/pt.json` e `src/i18n/en.json`. Contatos (Calendly, WhatsApp, e-mail, LinkedIn) ficam em `src/i18n/routes.ts`.
+Edite `src/i18n/pt.json` e `src/i18n/en.json`. Contatos (link de agendamento `BOOKING`, WhatsApp, e-mail, LinkedIn) ficam em `src/i18n/routes.ts`. Para trocar o link de agendamento em todo o site, altere só a constante `BOOKING`.
 
 ## 6. Formulário de contato
 

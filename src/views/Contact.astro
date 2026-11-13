@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/PageHero.astro";
 import ContactForm from "../components/ContactForm.astro";
-import { t, CALENDLY, WHATSAPP, EMAIL, type Lang } from "../i18n";
+import { t, BOOKING, whatsappHref, WHATSAPP_DISPLAY, EMAIL, type Lang } from "../i18n";
 export interface Props { lang: Lang; }
 const { lang } = Astro.props;
 const c = t(lang);
@@ -13,11 +13,11 @@ const ch = c.contact.channels;
   <section class="section">
     <div class="container contact-grid">
       <div class="channels">
-        <a class="channel channel--primary" href={CALENDLY} target="_blank" rel="noopener">
-          <h2>{ch.call.title}</h2><p>{ch.call.text}</p><span>calendly.com →</span>
+        <a class="channel channel--primary" href={BOOKING} target="_blank" rel="noopener">
+          <h2>{ch.call.title}</h2><p>{ch.call.text}</p><span>{ch.call.cta} →</span>
         </a>
-        <a class="channel" href={WHATSAPP} target="_blank" rel="noopener">
-          <h2>{ch.whatsapp.title}</h2><p>{ch.whatsapp.text}</p><span>+351 935 678 698 →</span>
+        <a class="channel" href={whatsappHref(lang)} target="_blank" rel="noopener">
+          <h2>{ch.whatsapp.title}</h2><p>{ch.whatsapp.text}</p><span>{WHATSAPP_DISPLAY} →</span>
         </a>
         <a class="channel" href={`mailto:${EMAIL}`}>
           <h2>{ch.email.title}</h2><p>{ch.email.text}</p><span>{EMAIL}</span>
