@@ -1,24 +1,22 @@
 ---
-// Root: send visitors to their language. Portuguese browsers -> /pt/, everyone else -> /en/.
+// Root: always open the Portuguese site first. English is one click away via the PT/EN switcher.
 ---
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campanelli Analytics | Automation, Data Engineering & BI</title>
     <meta name="description" content="Process automation, data engineering and BI for companies and public bodies in Brazil and Europe. Automação, engenharia de dados e BI para empresas e governos." />
-    <link rel="canonical" href="https://campanellianalytics.com/en/" />
+    <link rel="canonical" href="https://campanellianalytics.com/pt/" />
+    <meta http-equiv="refresh" content="0; url=/pt/" />
     <link rel="alternate" hreflang="pt-BR" href="https://campanellianalytics.com/pt/" />
     <link rel="alternate" hreflang="en" href="https://campanellianalytics.com/en/" />
     <link rel="alternate" hreflang="x-default" href="https://campanellianalytics.com/" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <meta property="og:image" content="https://campanellianalytics.com/og-pt.png" />
     <script is:inline>
-      (function () {
-        var langs = (navigator.languages || [navigator.language || ""]).join(",").toLowerCase();
-        location.replace(/(^|,)pt/.test(langs) ? "/pt/" : "/en/");
-      })();
+      location.replace("/pt/" + location.search + location.hash);
     </script>
     <style>
       body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; background:#0B1D3A; color:#fff; font-family: system-ui, sans-serif; }

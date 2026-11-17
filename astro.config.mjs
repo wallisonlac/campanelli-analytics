@@ -20,7 +20,7 @@ export default defineConfig({
       filter: (page) =>
         page !== "https://campanellianalytics.com/" &&
         !/\/(obrigado|thank-you|parcerias|entrega-internacional|capacidades|partnerships|global-delivery|selected-work)\/$/.test(page),
-      i18n: { defaultLocale: "en", locales: { en: "en", pt: "pt-BR" } },
+      i18n: { defaultLocale: "pt", locales: { en: "en", pt: "pt-BR" } },
     }),
   ],
 });
