@@ -1,0 +1,93 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import CTABand from "../components/CTABand.astro";
+import { t, href, BOOKING, whatsappHref, SITE, routes, type Lang } from "../i18n";
+import { landings, type LandingKey } from "../i18n/landings";
+export interface Props { lang: Lang; page: LandingKey; }
+const { lang, page } = Astro.props;
+const c = t(lang);
+const l = landings[page][lang];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: l.serviceName,
+    serviceType: l.serviceName,
+    description: c.meta[page].description,
+    url: `${SITE}${routes[page][lang]}`,
+    provider: { "@id": `${SITE}/#organization` },
+    areaServed: ["BR", "PT", "EU"],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: l.faq.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+<BaseLayout lang={lang} page={page}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <PageHero eyebrow={l.eyebrow} title={l.title} subtitle={l.subtitle}>
+    <div class="btn-row">
+      <a class="btn btn--primary btn--lg" href={BOOKING} target="_blank" rel="noopener">{c.ui.bookCall}</a>
+      <a class="btn btn--ghost btn--lg" href={whatsappHref(lang)} target="_blank" rel="noopener">{c.ui.whatsapp}</a>
+    </div>
+  </PageHero>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2>{l.pains.title}</h2>
+      </div>
+      <ul class="xlist">{l.pains.items.map((i) => <li>{i}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container split">
+      <div>
+        <h2>{l.solution.title}</h2>
+        <p class="lead-sm">{l.solution.text}</p>
+        <p class="eyebrow">{c.ui.stack}</p>
+        <ul class="chips">{l.stack.map((s) => <li>{s}</li>)}</ul>
+      </div>
+      <ul class="checklist checklist--lg">{l.solution.items.map((i) => <li>{i}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>{l.steps.title}</h2>
+      </div>
+      <ol class="steps">
+        {l.steps.items.map((s, i) => (
+          <li class="step"><span class="step__n">{String(i + 1).padStart(2, "0")}</span><h3>{s.title}</h3><p>{s.text}</p></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container narrow">
+      <h2>{c.ui.faq}</h2>
+      <div class="faq">
+        {l.faq.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <p><a class="link-arrow" href={href("services", lang)}>← {c.ui.backToServices}</a></p>
+    </div>
+  </section>
+
+  <CTABand lang={lang} title={l.cta.title} text={l.cta.text} />
+</BaseLayout>

@@ -11,7 +11,10 @@
     "contact": { "title": "Contact | Book a free discovery call | Campanelli Analytics", "description": "Tell us about your data or automation challenge. Book a 30-minute call or message us on WhatsApp." },
     "privacy": { "title": "Privacy Policy | Campanelli Analytics", "description": "How Campanelli Analytics handles data submitted through this website." },
     "terms": { "title": "Terms of Use | Campanelli Analytics", "description": "Terms of use for the Campanelli Analytics website." },
-    "thanks": { "title": "Message received | Campanelli Analytics", "description": "Thank you for getting in touch." }
+    "thanks": { "title": "Message received | Campanelli Analytics", "description": "Thank you for getting in touch." },
+    "svcPowerBI": { "title": "Excel to Power BI Migration | Power BI Consultant | Campanelli Analytics", "description": "We migrate complex spreadsheets and manual reports to Power BI: star-schema model, DAX, automatic refresh and line-by-line validation. Remote delivery across Europe and Brazil." },
+    "svcAutomation": { "title": "Report and Process Automation | Campanelli Analytics", "description": "We automate reports, reconciliations and month-end closing with Python, SQL, Power Automate and Power BI. Fewer manual hours and fewer errors, without replacing your systems." },
+    "svcFabric": { "title": "Microsoft Fabric & Azure Data Engineering Consultant | Campanelli Analytics", "description": "Data pipelines, lakehouses and data warehouses on Microsoft Fabric and Azure, SSIS-to-cloud migration and Power BI-ready models." }
   },
   "nav": {
     "home": "Home",
@@ -35,7 +38,9 @@
     "challenge": "Challenge",
     "delivered": "What we delivered",
     "ongoing": "Ongoing",
-    "langLabel": "Language"
+    "langLabel": "Language",
+    "faq": "Frequently asked questions",
+    "backToServices": "All services"
   },
   "home": {
     "hero": {
