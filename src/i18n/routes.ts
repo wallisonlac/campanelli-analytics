@@ -12,6 +12,9 @@ export const routes = {
   privacy:      { pt: "/pt/privacidade/",   en: "/en/privacy/" },
   terms:        { pt: "/pt/termos/",        en: "/en/terms/" },
   thanks:       { pt: "/pt/obrigado/",      en: "/en/thank-you/" },
+  svcPowerBI:   { pt: "/pt/servicos/excel-para-power-bi/",        en: "/en/services/excel-to-power-bi/" },
+  svcAutomation:{ pt: "/pt/servicos/automacao-de-relatorios/",    en: "/en/services/report-automation/" },
+  svcFabric:    { pt: "/pt/servicos/engenharia-de-dados-fabric/", en: "/en/services/data-engineering-fabric/" },
 } as const;
 
 export type PageKey = keyof typeof routes;

@@ -9,6 +9,8 @@ const { lang } = Astro.props;
 const c = t(lang);
 const s = c.services;
 const icons = ["automation", "data", "bi", "cloud", "ai"];
+// Dedicated landing page per service row (by position), where one exists.
+const landingFor = ["svcAutomation", "svcFabric", "svcPowerBI", "svcFabric", null] as const;
 ---
 <BaseLayout lang={lang} page="services">
   <PageHero eyebrow={s.hero.eyebrow} title={s.hero.title} subtitle={s.hero.subtitle}>
@@ -29,6 +31,7 @@ const icons = ["automation", "data", "bi", "cloud", "ai"];
           <div class="service-row__body">
             <ul class="checklist">{item.bullets.map((b) => <li>{b}</li>)}</ul>
             <p class="outcome"><strong>{c.ui.outcome}:</strong> {item.outcome}</p>
+            {landingFor[i] && <a class="link-arrow" href={href(landingFor[i], lang)}>{c.ui.learnMore} →</a>}
           </div>
         </article>
       ))}
